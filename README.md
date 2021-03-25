@@ -56,6 +56,8 @@
 <img src="https://cdn.zhoukaiwen.com/zjx_9.png" width="140" />
 <img src="https://cdn.zhoukaiwen.com/zjx_4.png" width="140" />
 <img src="https://cdn.zhoukaiwen.com/zjx_5.png" width="140" />
+<img src="https://cdn.zhoukaiwen.com/zjx_11.png" width="140" />
+<img src="https://cdn.zhoukaiwen.com/zjx_12.png" width="140" />
 
 </br></br>
 ### 扫码体验
