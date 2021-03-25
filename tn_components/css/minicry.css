@@ -1,0 +1,193 @@
+.tarbar-mimicry {
+  background-color: #F7FCFF;
+
+}
+
+
+/* 新拟态 */
+.mimicry {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px rgba(255, 255, 255, 1);
+}
+
+.my-icon image {
+  width: 100rpx;
+  height: 100rpx;
+  display: inline-block;
+  margin: 0 auto
+}
+
+.text-my {
+  color: #aaa !important;
+}
+
+.container .box .img {
+  width: 60px;
+  height: 60px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+    -10px -10px 20px rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  transition: box-shadow .2s ease-out;
+  position: relative;
+}
+
+.container .box .img {
+  margin: 0 auto;
+  transition: width .2s ease-out;
+  /*实现效果以及实现方向以及实现时间 ease-out代表过度效果*/
+}
+
+.container .box p {
+  color: slategray;
+}
+
+.container .box .img:hover {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1),
+    0 0 0 rgba(255, 255, 255, 1),
+    inset 10px 10px 20px rgba(0, 0, 0, 0.1),
+    inset -10px -10px 20px rgba(255, 255, 255, 1);
+  /*内嵌投影值*/
+  transition: box-shadow .2s ease-out;
+}
+
+.container .box .img:hover img {
+  width: 58px;
+  transition: width .2s ease-out;
+}
+
+
+/* 底部标签栏 */
+.navbar__item .avatar {
+  background-color: currentColor;
+  border-radius: 100%;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.55s cubic-bezier(0.71, 0.03, 0.23, 0.95);
+}
+
+.navbar__item.-blue {
+  color: #06b8ff;
+}
+
+.navbar__item.-orange {
+  color: #f2704d;
+}
+
+.navbar__item.-navy-blue {
+  color: #405fff;
+}
+
+.navbar__item.-yellow {
+  color: #f8cd4b;
+}
+
+.navbar__item.-purple {
+  color: #8444d6;
+}
+
+.avatar.-blue {
+  color: #06b8ff;
+}
+
+.avatar.-orange {
+  color: #f2704d;
+}
+
+.avatar.-navy-blue {
+  color: #405fff;
+}
+
+.avatar.-yellow {
+  color: #f8cd4b;
+}
+
+.avatar.-purple {
+  color: #8444d6;
+}
+
+.navbar__item:hover .avatar {
+  transform: translateY(-36px) scale(1.4);
+  opacity: 1;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1),
+    -1px -1px 5px rgba(255, 255, 255, 1);
+}
+
+.navbar__item:hover::before {
+  opacity: 1;
+}
+
+.navbar__item:hover::after {
+  opacity: 0.4;
+}
+
+.navbar__item:hover .navbar__icon {
+  transform: translateY(-23px) scale(1);
+  color: #fff;
+  transition-delay: 0.1s, 0.1s;
+}
+
+/* .navbar__item:hover .avatar .icon-name{
+    transform: translateY(-36px) scale(1.4);
+    opacity: 1;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1),
+    -1px -1px 5px rgba(255,255,255,1);
+  } */
+.navbar__item:hover .icon-name {
+  /* font-size: 20rpx !important; */
+  /* margin-top: 20rpx !important; */
+  transition-delay: 0.1s, 0.1s;
+}
+
+.navbar__icon {
+  bottom: -13px;
+  transition: all 0.5s cubic-bezier(0.71, 0.03, 0.23, 0.95);
+  transition-delay: 0.1s;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+/* 商品 */
+
+.cardTitle {
+  color: #fff;
+  padding: 90rpx 60rpx;
+  /* font-size: 40rpx;
+  font-weight: 300;
+  transform: skew(-10deg, 0deg);
+  position: relative;
+  text-shadow: 0px 0px 6rpx rgba(0,0,0,0.3); */
+  opacity: 0
+}
+
+.cardTitlebig {
+  color: #fff;
+  padding: 160rpx 60rpx;
+  /* font-size: 40rpx;
+  font-weight: 300;
+  transform: skew(-10deg, 0deg);
+  position: relative;
+  text-shadow: 0px 0px 6rpx rgba(0,0,0,0.3); */
+  opacity: 0
+}
+
+.products-box {
+  /* margin:0 20rpx 20rpx 20rpx; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.delete-price {
+  padding-left: 10rpx;
+  text-decoration: line-through
+}
+
+.product-price {
+  margin-top: 10rpx;
+  margin-left: -5rpx;
+}

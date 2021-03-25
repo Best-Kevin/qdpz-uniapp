@@ -1,0 +1,9 @@
+
+.item-name.data-v-64fec8cd {
+	margin-bottom: 15rpx;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+

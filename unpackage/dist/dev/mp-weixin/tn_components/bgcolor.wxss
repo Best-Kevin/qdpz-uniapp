@@ -1,0 +1,51 @@
+
+.components-bgcolor.data-v-44aa348c {
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	overflow: hidden;
+	-webkit-animation: color-loop-data-v-44aa348c 18s infinite;
+	        animation: color-loop-data-v-44aa348c 18s infinite;
+}
+@-webkit-keyframes color-loop-data-v-44aa348c {
+0% {
+		background: #F15BB5;
+}
+25% {
+		background: #00F5D4;
+}
+50% {
+		background: #01BEFF;
+}
+75% {
+		background: #9A5CE5;
+}
+100% {
+		background: #F15BB5;
+}
+}
+@keyframes color-loop-data-v-44aa348c {
+0% {
+		background: #F15BB5;
+}
+25% {
+		background: #00F5D4;
+}
+50% {
+		background: #01BEFF;
+}
+75% {
+		background: #9A5CE5;
+}
+100% {
+		background: #F15BB5;
+}
+}
+.container.data-v-44aa348c {
+	width: 100%;
+	position: absolute;
+	text-align: center;
+}
+
+

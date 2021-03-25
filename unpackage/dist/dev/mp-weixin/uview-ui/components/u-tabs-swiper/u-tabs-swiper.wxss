@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+view.data-v-9c8ef540,
+scroll-view.data-v-9c8ef540 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.u-tabs.data-v-9c8ef540 {
+  width: 100%;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+}
+.data-v-9c8ef540::-webkit-scrollbar,.data-v-9c8ef540::-webkit-scrollbar,.data-v-9c8ef540::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+  height: 0 !important;
+  -webkit-appearance: none;
+  background: transparent;
+}
+.u-scroll-view.data-v-9c8ef540 {
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+}
+.u-tabs-scroll-box.data-v-9c8ef540 {
+  position: relative;
+}
+.u-tabs-scorll-flex.data-v-9c8ef540 {
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.u-tabs-scorll-flex .u-tabs-item.data-v-9c8ef540 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.u-tabs-item.data-v-9c8ef540 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  -webkit-transition-property: background-color, color, font-weight;
+  transition-property: background-color, color, font-weight;
+}
+.content.data-v-9c8ef540 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.boxStyle.data-v-9c8ef540 {
+  pointer-events: none;
+  position: absolute;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+.boxStyle2.data-v-9c8ef540 {
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+.itemBackgroundBox.data-v-9c8ef540 {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  -webkit-transition-property: left, background-color;
+  transition-property: left, background-color;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.itemBackground.data-v-9c8ef540 {
+  height: 100%;
+  width: 100%;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+.u-scroll-bar.data-v-9c8ef540 {
+  position: absolute;
+  bottom: 4rpx;
+}
+

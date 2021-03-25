@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "u-badge": "/uview-ui/components/u-badge/u-badge"
+  },
+  "component": true
+}

@@ -1,0 +1,161 @@
+
+page {
+	background: #fbfbfb;
+	height: auto;
+	overflow: hidden;
+}
+.wrapper {
+	width: 100%;
+	height: 95vh;
+	margin: 30rpx 0;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-content: center;
+	        align-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	font-size: 28rpx;
+}
+.handWriting {
+	background: #fff;
+	width: 100%;
+	height: 95vh;
+}
+.handRight {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.handCenter {
+	border: 4rpx dashed #e9e9e9;
+	-webkit-box-flex: 5;
+	-webkit-flex: 5;
+	        flex: 5;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.handTitle {
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	color: #666;
+}
+.handBtn button {
+	font-size: 28rpx;
+}
+.handBtn {
+	height: 95vh;
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-align-content: space-between;
+	        align-content: space-between;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.delBtn {
+	position: absolute;
+	top: 250rpx;
+	left: 0rpx;
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
+	color: #666;
+}
+.delBtn image {
+	position: absolute;
+	top: 13rpx;
+	left: 25rpx;
+}
+.subBtn {
+	position: absolute;
+	bottom: 52rpx;
+	left: -3rpx;
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
+	background: #008ef6;
+	color: #fff;
+	margin-bottom: 30rpx;
+	text-align: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+/*Peach - 新增 - 保存*/
+.saveBtn {
+	position: absolute;
+	top: 375rpx;
+	left: 0rpx;
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
+	color: #666;
+}
+.previewBtn {
+	position: absolute;
+	top: 500rpx;
+	left: 0rpx;
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
+	color: #666;
+}
+.uploadBtn {
+	position: absolute;
+	top: 625rpx;
+	left: 0rpx;
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
+	color: #666;
+}
+
+/*Peach - 新增 - 保存*/
+.black-select {
+	width: 60rpx;
+	height: 60rpx;
+	position: absolute;
+	top: 30rpx;
+	left: 25rpx;
+}
+.black-select.color_select {
+	width: 90rpx;
+	height: 90rpx;
+	top: 100rpx;
+	left: 10rpx;
+}
+.red-select {
+	width: 60rpx;
+	height: 60rpx;
+	position: absolute;
+	top: 140rpx;
+	left: 25rpx;
+}
+.red-select.color_select {
+	width: 90rpx;
+	height: 90rpx;
+	top: 120rpx;
+	left: 10rpx;
+}
+

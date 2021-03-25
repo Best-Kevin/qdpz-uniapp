@@ -1,0 +1,40 @@
+
+.components-bggrad.data-v-3d7463b5 {
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	background: -webkit-linear-gradient(45deg, #00F5D4, #01BEFF, #9A5CE5, #F15BB5);
+	background: linear-gradient(45deg, #00F5D4, #01BEFF, #9A5CE5, #F15BB5);
+	background-size: 500% 500%;
+	-webkit-animation: gradientBG-data-v-3d7463b5 15s ease infinite;
+	        animation: gradientBG-data-v-3d7463b5 15s ease infinite;
+}
+@-webkit-keyframes gradientBG-data-v-3d7463b5 {
+0% {
+		background-position: 0% 50%;
+}
+50% {
+		background-position: 100% 50%;
+}
+100% {
+		background-position: 0% 50%;
+}
+}
+@keyframes gradientBG-data-v-3d7463b5 {
+0% {
+		background-position: 0% 50%;
+}
+50% {
+		background-position: 100% 50%;
+}
+100% {
+		background-position: 0% 50%;
+}
+}
+.container.data-v-3d7463b5 {
+	width: 100%;
+	position: absolute;
+	text-align: center;
+}
+

@@ -1,0 +1,1 @@
+<view><canvas class="like-fx" style="{{('width:'+width+'px;height:'+height+'px')}}" canvas-id="bubble"></canvas></view>

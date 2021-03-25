@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "design-u-waterfall-left": "/pages/design-u-waterfall-left",
+    "design-u-waterfall-right": "/pages/design-u-waterfall-right",
+    "u-notice-bar": "/uview-ui/components/u-notice-bar/u-notice-bar",
+    "u-waterfall": "/uview-ui/components/u-waterfall/u-waterfall",
+    "u-lazy-load": "/uview-ui/components/u-lazy-load/u-lazy-load",
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}

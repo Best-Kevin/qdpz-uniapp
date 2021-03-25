@@ -1,0 +1,1 @@
+<view class="data-v-3c41912e"><block wx:if="{{showTip}}"><view class="uni-add-tips-box data-v-3c41912e"><view data-event-opts="{{[['tap',[['hideTip',['$event']]]]]}}" class="uni-add-tips-content data-v-3c41912e" bindtap="__e"><text class="data-v-3c41912e">{{tip}}</text></view></view></block></view>

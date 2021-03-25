@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "component": true,
+  "componentGenerics": {
+    "scoped-slots-left": true,
+    "scoped-slots-right": true
+  }
+}

@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.topBox {
+  width: 750rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30rpx;
+  color: #EEEEEE;
+  font-size: 34rpx;
+}
+.topBox .topItem {
+  width: 100%;
+  white-space: pre-wrap;
+  margin-bottom: 15rpx;
+}
+.cameraBtn {
+  width: 120rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  border: 6rpx #FFFFFF solid;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  padding: 8rpx;
+  position: absolute;
+  left: calc(50% - 60rpx);
+  bottom: 210rpx;
+}
+.cameraBtn2 {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #FFFFFF;
+  text-align: center;
+  color: #007AFF;
+}
+.xzImg {
+  width: 52rpx;
+  height: auto;
+  position: absolute;
+  right: 44rpx;
+  bottom: 580rpx;
+}
+.sgdImg {
+  width: 40rpx;
+  height: auto;
+  position: absolute;
+  right: 50rpx;
+  bottom: 450rpx;
+}
+.bottomBtn {
+  width: 100%;
+  height: 150rpx;
+  padding-bottom: 15rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.bottomBtn .btn {
+  width: 30%;
+  height: 150rpx;
+  font-size: 34rpx;
+  color: #FFFFFF;
+  line-height: 150rpx;
+}
+.bottomBg {
+  width: 100%;
+  height: 170rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20rpx 30rpx 40rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.bottomBg .imgBox {
+  width: 110rpx;
+  height: 110rpx;
+  float: left;
+  margin-right: 40rpx;
+  position: relative;
+}
+.bottomBg .imgBox .cu-tag {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-border-bottom-left-radius: 2px;
+          border-bottom-left-radius: 2px;
+  padding: 3px 5px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 10px;
+  vertical-align: middle;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  white-space: nowrap;
+  color: #ffffff;
+}
+.bottomBg .imgItem {
+  width: 110rpx;
+  height: 110rpx;
+}
+.report {
+  height: 68rpx;
+  line-height: 68rpx;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0rpx 20rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+  background-color: #2157FF;
+}
+.iconClose {
+  width: 20rpx;
+  height: 20rpx;
+}
+.reportBox {
+  width: 750rpx;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10rpx 20rpx;
+  background-color: #FFFFFF;
+  position: absolute;
+  bottom: 0;
+}
+.listBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+.item {
+  width: 160rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  text-align: center;
+  background: #F7F7F9;
+  margin-bottom: 40rpx;
+  color: #888888;
+}
+.active {
+  background-color: #F1F7FF;
+  color: #025ADD;
+}
+.repBtn {
+  width: 680rpx;
+  height: 78rpx;
+  line-height: 78rpx;
+  background-color: #025ADD;
+  color: #FFFFFF;
+  font-size: 33rpx;
+  text-align: center;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+  margin: 5rpx auto 20rpx;
+}
+

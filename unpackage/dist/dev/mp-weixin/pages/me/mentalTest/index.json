@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "答题测试",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-line": "/uview-ui/components/u-line/u-line",
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "u-mask": "/uview-ui/components/u-mask/u-mask"
+  }
+}

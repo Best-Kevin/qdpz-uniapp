@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "视频播放",
+  "usingComponents": {
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "txv-video": "plugin://tencentvideo/video"
+  }
+}

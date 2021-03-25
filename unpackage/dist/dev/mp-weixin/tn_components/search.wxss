@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.nav-box.data-v-3bb1ea6c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  height: 80rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-bottom: 1px solid #gray;
+  -webkit-box-shadow: -1rpx 4rpx 10rpx rgba(2, 90, 221, 0.17);
+          box-shadow: -1rpx 4rpx 10rpx rgba(2, 90, 221, 0.17);
+}
+.nav-box view.data-v-3bb1ea6c {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  font-size: 28rpx;
+}
+.nav-box .active.data-v-3bb1ea6c {
+  color: #334BE7;
+  font-weight: bold;
+}
+.operation.data-v-3bb1ea6c {
+  width: 85rpx;
+  background: white;
+  -webkit-box-shadow: -1rpx 4rpx 16rpx rgba(2, 90, 221, 0.17);
+          box-shadow: -1rpx 4rpx 16rpx rgba(2, 90, 221, 0.17);
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+  position: absolute;
+  bottom: 580rpx;
+  right: 21rpx;
+  padding-top: 10rpx;
+  z-index: 10;
+}
+.operation-item.data-v-3bb1ea6c {
+  text-align: center;
+  margin-bottom: 10rpx;
+}
+.operation-item view.data-v-3bb1ea6c {
+  font-size: 30rpx;
+  font-family: SourceHanSansCN-Medium;
+  line-height: 32rpx;
+  color: #666666;
+}
+.operation-item.data-v-3bb1ea6c:nth-child(1) {
+  margin-bottom: 24rpx;
+}
+.operation-item:nth-child(1) image.data-v-3bb1ea6c {
+  width: 40rpx;
+  height: 32rpx;
+}
+.operation-item.data-v-3bb1ea6c:nth-child(2) {
+  margin-bottom: 10rpx;
+}
+.operation-item:nth-child(2) image.data-v-3bb1ea6c {
+  width: 39rpx;
+  height: 39rpx;
+}
+.operation-item.data-v-3bb1ea6c:nth-child(3) {
+  margin-bottom: 15rpx;
+}
+.operation-item:nth-child(3) image.data-v-3bb1ea6c {
+  width: 42rpx;
+  height: 22rpx;
+}
+.gas-station.data-v-3bb1ea6c {
+  width: 100%;
+  background: white;
+  -webkit-box-shadow: 8rpx 0 24rpx rgba(57, 111, 250, 0.23);
+          box-shadow: 8rpx 0 24rpx rgba(57, 111, 250, 0.23);
+  opacity: 1;
+  -webkit-border-radius: 20rpx 20rpx 0 0;
+          border-radius: 20rpx 20rpx 0 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+}
+.gas-station-arrow.data-v-3bb1ea6c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.gas-station .station-list.data-v-3bb1ea6c {
+  padding: 0rpx 22rpx;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.gas-station .station-list .item.data-v-3bb1ea6c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 10rpx;
+}
+.gas-station .station-list .item .item-img.data-v-3bb1ea6c {
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+}
+.gas-station .station-list .item .item-img image.data-v-3bb1ea6c {
+  width: 150rpx;
+  height: 150rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+  border: 1px solid #f2f2f2;
+}
+.gas-station .station-list .item .item-info.data-v-3bb1ea6c {
+  width: 100%;
+  padding: 5rpx 15rpx;
+}
+.gas-station .station-list .item .item-info text.data-v-3bb1ea6c {
+  color: #334BE7;
+}
+.gas-station .station-list .item .item-info .item-title.data-v-3bb1ea6c {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.gas-station .station-list .item .item-info view.data-v-3bb1ea6c:nth-child(2) {
+  margin-top: 5rpx;
+  font-size: 24rpx;
+}
+.gas-station .station-list .item .item-info view.data-v-3bb1ea6c:nth-child(3) {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+}
+.gas-station .station-list .item .item-info .item-nav.data-v-3bb1ea6c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.gas-station .station-list .item .item-info .item-nav .btn-nav.data-v-3bb1ea6c {
+  width: 100rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  text-align: center;
+  border: 1px solid #334BE7;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+  color: #334BE7;
+  font-size: 24rpx;
+}
+

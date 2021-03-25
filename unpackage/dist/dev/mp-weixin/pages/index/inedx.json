@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "add-tip": "/components/wxcomponents/struggler-uniapp-add-tip/struggler-uniapp-add-tip"
+  }
+}

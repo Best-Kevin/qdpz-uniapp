@@ -1,0 +1,196 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/tabbar",
+			"style": {
+				"navigationBarTitleText": "宅家学IT",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/salary",
+			"style": {
+				"navigationBarTitleText": "薪资排行",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/aboutMe",
+			"style": {
+				"navigationBarTitleText": "关于作者",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/mentalTest/list",
+			"style": {
+				"navigationBarTitleText": "答题测试",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/mentalTest/index",
+			"style": {
+				"navigationBarTitleText": "答题测试",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/mentalTest/explain",
+			"style": {
+				"navigationBarTitleText": "答题规则说明"
+			}
+		},
+		{
+			"path": "pages/news/news",
+			"style": {
+				"navigationBarTitleText": "资讯详情"
+			}
+		},
+		{
+			"path": "pages/me/course",
+			"style": {
+				"navigationBarTitleText": "班级课程",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/video",
+			"style": {
+				"navigationBarTitleText": "视频播放",
+				"usingComponents": {
+					// #ifdef  MP-WEIXIN 
+					"txv-video": "plugin://tencentvideo/video"
+					// #endif
+				}
+			}
+		},
+		{
+			"path": "pages/project/list",
+			"style": {
+				"navigationBarTitleText": "项目展示",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/project/project",
+			"style": {
+				"navigationBarTitleText": "项目展示",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/timeline",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/design",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "tn_components",
+		"pages": [{
+			"path": "pano",
+			"style": {}
+		}, {
+			"path": "bggrad",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "bgcolor",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "ancube",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "anloading",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "mimicry",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "mapLocus",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "charts",
+			"style": {
+				"navigationBarTitleText": "图表展示"
+			}
+		},
+		{
+			"path": "poster",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "discern",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},{
+			"path": "sign",
+			"style": {
+				"navigationBarTitleText": "电子签名"
+			}
+		},{
+			"path": "district",
+			"style": {
+				"navigationBarTitleText": "行政区图"
+			}
+		},
+		{	
+			"path": "search",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "便捷查询"
+			}
+		},
+		{
+			"path": "openDocument",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "文档预览"
+			}
+		},
+		{
+			"path": "company",
+			"style": {
+				"navigationBarTitleText": "自定义相机"
+			}
+		},
+		{
+			"path": "timeline",
+			"style": {
+				"navigationBarTitleText": "时间轴"
+			}
+		}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

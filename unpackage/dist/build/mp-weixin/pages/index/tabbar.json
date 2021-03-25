@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "宅家学IT",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "index": "/pages/index/inedx",
+    "search": "/pages/index/search",
+    "cases": "/pages/index/main",
+    "news": "/pages/index/news",
+    "me": "/pages/index/me"
+  }
+}

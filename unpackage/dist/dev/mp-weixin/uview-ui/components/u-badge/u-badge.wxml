@@ -1,0 +1,1 @@
+<block wx:if="{{show}}"><view class="{{['u-badge data-v-2b1712d8',isDot?'u-badge-dot':'',size=='mini'?'u-badge-mini':'',type?'u-badge--bg--'+type:'']}}" style="{{$root.s0}}">{{''+showText+''}}</view></block>
