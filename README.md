@@ -60,9 +60,9 @@
 
 </br>
 ### 其他说明
-1. 查看最新项目，请使用微信搜索小程序：“7he丶Kevin”
-2. 作者 首页 [www.zhoukaiwen.com](https://www.zhoukaiwen.com)
-3. 项目功能需协助，请联系作者微信：280224091
+> *  查看最新项目，请使用微信搜索小程序：“7he丶Kevin”
+> *  作者 首页 [www.zhoukaiwen.com](https://www.zhoukaiwen.com)
+> *  项目功能需协助，请联系作者微信：280224091
 
 
 </br>
