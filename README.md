@@ -42,7 +42,7 @@
 <img src="https://cdn.zhoukaiwen.com/xcx_ewm.jpg" width="150" />
 
 
-</br>
+
 ### 安装教程
 
 1.  下载安装：HBuildX、微信开发者工具
@@ -68,9 +68,8 @@
 
 </br>
 ### 赞助作者
-
 <img src="https://cdn.zhoukaiwen.com/fk_zfb.jpeg" width="120"/>
 <img src="https://cdn.zhoukaiwen.com/fk_wx.jpeg" width="120" />
 
-</br>
+
 ### 如果有项目需求、有设计，可以联系我，介绍有大红包哦～
