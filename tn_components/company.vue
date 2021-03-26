@@ -55,6 +55,10 @@
 			</cover-view>
 
 		</camera>
+		
+		<view style="position: absolute;top: -999999px;">
+			<view><canvas :style="{ width: w, height: h }" canvas-id="firstCanvas"></canvas></view>
+		</view>
 
 	</view>
 </template>
@@ -79,6 +83,10 @@
 				imgListData: '',
 
 				rreportShow: false, //选择照片备注内容弹窗
+				
+				src:'',
+				w:'',
+				h:''
 			}
 		},
 		onLoad() {
@@ -193,23 +201,62 @@
 			},
 			// 点击拍照
 			takePhoto() {
+				var that = this;
 				if (this.imgList.length < 3) {
 					const ctx = uni.createCameraContext();
 					ctx.takePhoto({
 						quality: 'high',
 						success: (res) => {
-							this.imgList.push({
-								src: res.tempImagePath
-							})
-							console.log(this.imgList);
-
-							var arr = this.imgList
-							var str = '';
-							for (var i = 0; i < arr.length; i++) {
-								str += arr[i].src + ",";
-							}
-							this.imgListData = str;
-							console.log(this.imgListData)
+							var tempImagePath = res.tempImagePath;
+							// 获取图片信息
+							uni.getImageInfo({
+								src: res.tempImagePath,
+								success: ress => {
+									that.w = ress.width / 3 + 'px';
+									that.h = ress.height / 3.01 + 'px';
+									let ctx = uni.createCanvasContext('firstCanvas'); /** 创建画布 */
+									//将图片src放到cancas内，宽高为图片大小
+									ctx.drawImage(res.tempImagePath, 0, 0, ress.width / 3, ress.height / 3);
+									ctx.setFontSize(12);
+									ctx.setFillStyle('#FFFFFF');
+									// ctx.rotate(30 * Math.PI / 180);
+									let textToWidth = (ress.width / 3) * 0.03;
+							
+									let textToHeight = (ress.height / 3) * 0.9;
+									ctx.fillText('陕A88888', textToWidth, textToHeight);
+							
+									ctx.setFontSize(10);
+									let textToHeight2 = (ress.height / 3) * 0.94;
+									ctx.fillText(that.nowTime + ' ' + that.nowTime2, textToWidth, textToHeight2);
+							
+									let textToHeight3 = (ress.height / 3) * 0.98;
+									ctx.fillText(that.address, textToWidth, textToHeight3);
+							
+									ctx.draw(false, () => {
+										setTimeout(() => {
+											uni.canvasToTempFilePath({
+												canvasId: 'firstCanvas',
+												success: res1 => {
+													tempImagePath = res1.tempFilePath;
+													console.log('----------',tempImagePath);
+													this.imgList.push({
+														src: tempImagePath
+													})
+													console.log(this.imgList);
+													
+													var arr = this.imgList
+													var str = '';
+													for (var i = 0; i < arr.length; i++) {
+														str += arr[i].src + ",";
+													}
+													this.imgListData = str;
+													console.log(this.imgListData)
+												}
+											});
+										}, 1000);
+									});
+								}
+							});
 						}
 					});
 				} else {
