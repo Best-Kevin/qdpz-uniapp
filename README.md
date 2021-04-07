@@ -6,9 +6,13 @@
 
 <div align="center">
 
-<p>如果觉得对你有用，随手点个<text style="color:#c33;font-weight:bold;"> 🌟 Star 🌟 </text>鼓励下，么么哒～</p>
+<!-- <p></p> -->
 
 <p>基于uni-app、colorUi、uView，支持小程序、H5、Android和IOS</p>
+
+```
+如果觉得对你有用，随手点个<text style="color:#c33;font-weight:bold;"> 🌟 Star 🌟 </text>鼓励下，么么哒～
+```
 
 </div>
 
