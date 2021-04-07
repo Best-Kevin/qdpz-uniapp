@@ -3,8 +3,9 @@
 </p>
 
 <p align="center">
-<a href="https://gitee.com/bbbug_com/bbbug-wechat-app/stargazers" target="_blank"><img src="https://svg.hamm.cn/gitee.svg?type=star&user=bbbug_com&project=bbbug-wechat-app"/></a>
-<a href="https://gitee.com/bbbug_com/bbbug-wechat-app/members" target="_blank"><img src="https://svg.hamm.cn/gitee.svg?type=fork&user=bbbug_com&project=bbbug-wechat-app"/></a>
+<a href="https://gitee.com/kevin_chou/front-end-pu-zi/stargazers" target="_blank"><img src="https://svg.hamm.cn/gitee.svg?type=star&user=bbbug_com&project=bbbug-wechat-app"/></a>
+
+<a href="https://gitee.com/kevin_chou/front-end-pu-zi/members" target="_blank"><img src="https://svg.hamm.cn/gitee.svg?type=fork&user=bbbug_com&project=bbbug-wechat-app"/></a>
 <img src="https://svg.hamm.cn/badge.svg?key=Platform&value=微信小程序"/>
 </p>
 
