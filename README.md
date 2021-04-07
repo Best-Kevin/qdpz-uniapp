@@ -18,7 +18,7 @@
 
 ### 项目说明
 
-1.  项目基于uniapp，使用colorUi与uview框架，部分Demo参考uniApp插件市场等，感谢各位作者～
+1.  项目基于Vue-uniApp，使用colorUi与uview框架，部分Demo参考uniApp插件市场等，感谢各位作者～
 2.  项目包含功能 (部分)：
 > *  自定义视频插件
 > * 自定义TabBar与顶部
