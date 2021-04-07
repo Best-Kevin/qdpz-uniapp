@@ -26,10 +26,6 @@
 
 </div>
 
-### 介绍
-
-#### 【前端铺子】前端技术案例、软件项目分享，开放所有代码
-
 </br></br>
 ### 扫码体验
 <img src="https://cdn.zhoukaiwen.com/xcx_ewm.jpg" width="150" />
