@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "关于作者",
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "like-fx": "/components/likeFx/likeFx"
-  }
-}

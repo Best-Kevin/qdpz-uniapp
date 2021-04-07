@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "图表展示",
-  "usingComponents": {
-    "u-notice-bar": "/uview-ui/components/u-notice-bar/u-notice-bar"
-  }
-}
