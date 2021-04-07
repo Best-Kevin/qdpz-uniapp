@@ -30,6 +30,10 @@
 
 #### 【前端铺子】前端技术案例、软件项目分享，开放所有代码
 
+</br></br>
+### 扫码体验
+<img src="https://cdn.zhoukaiwen.com/xcx_ewm.jpg" width="150" />
+
 ### 项目说明
 
 1.  项目基于Vue-uniApp，使用colorUi与uview框架，部分Demo参考uniApp插件市场等，感谢各位作者～
@@ -74,11 +78,6 @@
 <img src="https://cdn.zhoukaiwen.com/zjx_5.png" width="140" />
 <img src="https://cdn.zhoukaiwen.com/zjx_11.png" width="140" />
 <img src="https://cdn.zhoukaiwen.com/zjx_12.png" width="140" />
-
-</br></br>
-### 扫码体验
-<img src="https://cdn.zhoukaiwen.com/xcx_ewm.jpg" width="150" />
-
 
 
 ### 安装教程
