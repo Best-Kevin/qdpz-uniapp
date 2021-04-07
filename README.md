@@ -2,12 +2,6 @@
     <img width="200" src="https://cdn.zhoukaiwen.com/logo.png">
 </p>
 
-<p align="center">
-<a href="https://gitee.com/kevin_chou/front-end-pu-zi/stargazers" target="_blank"><img src="https://svg.hamm.cn/gitee.svg?type=star&user=bbbug_com&project=bbbug-wechat-app"/></a>
-
-<a href="https://gitee.com/kevin_chou/front-end-pu-zi/members" target="_blank"><img src="https://svg.hamm.cn/gitee.svg?type=fork&user=bbbug_com&project=bbbug-wechat-app"/></a>
-<img src="https://svg.hamm.cn/badge.svg?key=Platform&value=微信小程序"/>
-</p>
 
 
 <h1 align="center">《前端铺子》· 开源啦~ </h1>
