@@ -91,8 +91,9 @@
 
 
 ### 赞助作者
-<img src="https://cdn.zhoukaiwen.com/fk_zfb.jpeg" width="200"/>
-<img src="https://cdn.zhoukaiwen.com/fk_wx.jpeg" width="200" />
+> *  打赏就duck不必啦～ 就点点🌟 Star 🌟 关注更新，支持下作者就可以了
+<!-- <img src="https://cdn.zhoukaiwen.com/fk_zfb.jpeg" width="200"/>
+<img src="https://cdn.zhoukaiwen.com/fk_wx.jpeg" width="200" /> -->
 
 
 ### 如果有项目需求、有设计，可以联系我，介绍有大红包哦～
