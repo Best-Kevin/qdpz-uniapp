@@ -14,9 +14,8 @@
 
 <h1 align="center">《前端铺子》· 开源啦~ </h1>
 
+
 <div align="center">
-
-
 
 <p>基于uni-app、colorUi、uView，支持小程序、H5、Android和IOS</p>
 
@@ -33,6 +32,7 @@
 </br></br>
 ### 扫码体验
 <img src="https://cdn.zhoukaiwen.com/xcx_ewm.jpg" width="150" />
+
 
 ### 项目说明
 
