@@ -28,7 +28,8 @@
 
 </br></br>
 ### 扫码体验
-<img src="https://cdn.zhoukaiwen.com/xcx_ewm.jpg" width="150" />
+<!-- <img src="https://cdn.zhoukaiwen.com/xcx_ewm.jpg" width="150" /> -->
+<img src="https://cdn.zhoukaiwen.com/qdpz_ewm.png" width="100%" />
 
 ### 项目说明
 
