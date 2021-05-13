@@ -63,17 +63,10 @@
 
 ### 部分截图
 <img src="https://cdn.zhoukaiwen.com/FotoJet1.png" width="100%" />
-<img src="https://cdn.zhoukaiwen.com/zjx_10.png" width="140" />
-<img src="https://cdn.zhoukaiwen.com/zjx_2.png" width="140" />
-<img src="https://cdn.zhoukaiwen.com/zjx_6.png" width="140" />
-<img src="https://cdn.zhoukaiwen.com/zjx_7.png" width="140" />
-<img src="https://cdn.zhoukaiwen.com/zjx_3.png" width="140" />
-<img src="https://cdn.zhoukaiwen.com/zjx_8.png" width="140" />
-<img src="https://cdn.zhoukaiwen.com/zjx_9.png" width="140" />
-<img src="https://cdn.zhoukaiwen.com/zjx_4.png" width="140" />
-<img src="https://cdn.zhoukaiwen.com/zjx_5.png" width="140" />
-<img src="https://cdn.zhoukaiwen.com/zjx_11.png" width="140" />
-<img src="https://cdn.zhoukaiwen.com/zjx_12.png" width="140" />
+<img src="https://cdn.zhoukaiwen.com/FotoJet2.png" width="100%" />
+<img src="https://cdn.zhoukaiwen.com/FotoJet3.png" width="100%" />
+<img src="https://cdn.zhoukaiwen.com/FotoJet4.png" width="100%" />
+<img src="https://cdn.zhoukaiwen.com/FotoJet5.png" width="100%" />
 
 
 ### 安装教程
