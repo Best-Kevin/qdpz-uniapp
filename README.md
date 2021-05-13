@@ -28,7 +28,6 @@
 
 </br></br>
 ### 扫码体验
-<!-- <img src="https://cdn.zhoukaiwen.com/xcx_ewm.jpg" width="150" /> -->
 <img src="https://cdn.zhoukaiwen.com/qdpz_ewm.png" width="100%" />
 
 ### 项目说明
@@ -63,7 +62,7 @@
 
 
 ### 部分截图
-<img src="https://cdn.zhoukaiwen.com/zjx_1.png" width="140" />
+<img src="https://cdn.zhoukaiwen.com/FotoJet1.png" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/zjx_10.png" width="140" />
 <img src="https://cdn.zhoukaiwen.com/zjx_2.png" width="140" />
 <img src="https://cdn.zhoukaiwen.com/zjx_6.png" width="140" />
@@ -102,8 +101,5 @@
 
 ### 赞助作者
 > *  打赏就duck不必啦～ 就点点🌟 Star 🌟 关注更新，支持下作者就可以了
-<!-- <img src="https://cdn.zhoukaiwen.com/fk_zfb.jpeg" width="200"/>
-<img src="https://cdn.zhoukaiwen.com/fk_wx.jpeg" width="200" /> -->
-
 
 ### 如果有项目需求、有设计，可以联系我，介绍有大红包哦～
