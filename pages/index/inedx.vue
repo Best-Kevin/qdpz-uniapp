@@ -119,6 +119,12 @@
 
 				bannerList: [
 					{
+						imageUrl: 'https://cdn.zhoukaiwen.com/zjx_banner.png',
+					},
+					{
+						imageUrl: 'https://cdn.zhoukaiwen.com/zjx_banner3.png',
+					},
+					{
 						imageUrl: 'https://cdn.zhoukaiwen.com/zjx_banner1.png',
 					},
 					{
