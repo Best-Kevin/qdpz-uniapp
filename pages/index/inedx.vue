@@ -122,7 +122,7 @@
 						imageUrl: 'https://cdn.zhoukaiwen.com/zjx_banner1.png',
 					},
 					{
-						imageUrl: 'https://cdn.zhoukaiwen.com/zjx_banner1.png',
+						imageUrl: 'https://cdn.zhoukaiwen.com/zjx_banner2.png',
 					}
 				],
 				categories: [{
