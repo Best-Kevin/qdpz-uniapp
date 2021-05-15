@@ -40,7 +40,7 @@
 				<text class="text-xl text-bold text-blue text-shadow">热门视频</text>
 				<text class="text-ABC text-blue">curriculum</text>
 			</view>
-			<view class="action">
+			<view class="action" @click="goVideo" >
 				<text class="text-lg text-grey text-shadow">更多</text>
 			</view>
 		</view>
@@ -62,7 +62,7 @@
 		</view>
 		<view class="cu-bar bg-white margin-top-xs">
 			<view class="action sub-title">
-				<text class="text-xl text-bold text-blue text-shadow">商业项目</text>
+				<text class="text-xl text-bold text-blue text-shadow">开源项目</text>
 				<text class="text-ABC text-blue">curriculum</text>
 			</view>
 			<view class="action" @click="goProjectList">
@@ -118,16 +118,16 @@
 				},
 
 				bannerList: [{
-						imageUrl: 'http://cdn.zhoukaiwen.com/zjx_banner3.png',
+						imageUrl: '../../static/main/zjx_banner3.png',
 					}, 
 					{
-						imageUrl: 'http://cdn.zhoukaiwen.com/zjx_banner1.png',
+						imageUrl: '../../static/main/zjx_banner1.png',
 					},
 					{
-						imageUrl: 'http://cdn.zhoukaiwen.com/zjx_banner2.png',
+						imageUrl: '../../static/main/zjx_banner2.png',
 					},
 					{
-						imageUrl: 'http://cdn.zhoukaiwen.com/zjx_banner.png',
+						imageUrl: '../../static/main/zjx_banner.png',
 					}
 				],
 				categories: [{

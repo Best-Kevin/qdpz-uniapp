@@ -3,14 +3,14 @@
 	<view class="container">
 		<cu-custom bgColor="bg-gradual-blue" :isBack="true">
 			<block slot="backText">返回</block>
-			<block slot="content">商业项目</block>
+			<block slot="content">开源项目</block>
 		</cu-custom>
 		
 		<u-notice-bar mode="horizontal" type="primary" :list="list"></u-notice-bar>
 		
 		<view class="cu-bar bg-white margin-top-xs">
 			<view class="action sub-title">
-				<text class="text-xl text-bold text-blue text-shadow">商业项目</text>
+				<text class="text-xl text-bold text-blue text-shadow">开源项目</text>
 				<text class="text-ABC text-blue">curriculum</text>
 			</view>
 		</view>
@@ -51,7 +51,7 @@
 		data() {
 			return {
 				list:[
-					'实战项目均为作者制作，可商用，如有需要请联系作者购买，微信：280224091'
+					'开源项目均可商用，如有需要请移步至Git或联系作者，微信：280224091'
 				],
 				projectList: proData
 			}

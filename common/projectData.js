@@ -11,6 +11,18 @@ export default [{
 		content: ''
 	},
 	{
+		imgUrl: 'https://cdn.zhoukaiwen.com/dataVIS3.png',
+		type: '数据可视化大屏',
+		name: '数据可视化大屏电子沙盘集合，包含多种模版',
+		time: '2021-05-15',
+		user: [{
+			like: '10',
+			read: '201',
+			use: '15'
+		}],
+		content: ''
+	},
+	{
 		imgUrl: 'https://cdn.zhoukaiwen.com/ybss_jt.png',
 		type: '后台管理系统',
 		name: 'ToG端，一标三实信息管理平台，部分城市已上线',
