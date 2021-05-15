@@ -117,17 +117,12 @@
 					scrollTop: 0
 				},
 
-				bannerList: [{
-						imageUrl: '../../static/main/zjx_banner3.png',
-					}, 
+				bannerList: [
 					{
-						imageUrl: '../../static/main/zjx_banner1.png',
+						imageUrl: 'https://cdn.zhoukaiwen.com/zjx_banner1.png',
 					},
 					{
-						imageUrl: '../../static/main/zjx_banner2.png',
-					},
-					{
-						imageUrl: '../../static/main/zjx_banner.png',
+						imageUrl: 'https://cdn.zhoukaiwen.com/zjx_banner1.png',
 					}
 				],
 				categories: [{
