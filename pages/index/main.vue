@@ -1,7 +1,7 @@
 <template>
 	<view class="components-home">
 		<view style="margin-top:-50rpx;height: 486rpx;">
-			<image src='../../static/main/morent.png' mode='widthFix' class='png' style='width:100%;height:486rpx'></image>
+			<image src='https://s1.ax1x.com/2020/09/16/wccQQP.png' mode='widthFix' class='png' style='width:100%;height:486rpx'></image>
 		</view>
 		
 		<view class="title-header">
