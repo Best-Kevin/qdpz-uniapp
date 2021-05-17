@@ -148,7 +148,7 @@
 					color: 'yellow',
 					badge: 12,
 					mid: '3',
-					name: '商业项目'
+					name: '开源项目'
 				}, {
 					cuIcon: 'calendar',
 					color: 'cyan',
