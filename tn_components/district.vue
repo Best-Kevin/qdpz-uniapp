@@ -57,8 +57,8 @@
 		methods: {
 			getServerData() {
 				uni.request({
-					// url: 'https://cdn.zhoukaiwen.com/dataV.json',
-					url: 'http://192.168.5.105:8080/jeecg-boot/south/southGoverUser/loginVerify/ceshi',
+					url: 'https://cdn.zhoukaiwen.com/dataV.json',
+					// url: 'http://192.168.5.105:8080/jeecg-boot/south/southGoverUser/loginVerify/ceshi',
 					data: {},
 					success: function(res) {
 						let cMap = {
