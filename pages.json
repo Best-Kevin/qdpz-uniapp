@@ -184,6 +184,13 @@
 			"style": {
 				"navigationBarTitleText": "时间轴"
 			}
+		},
+		{
+			"path": "guide",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "引导页面"
+			}
 		}
 		]
 	}],

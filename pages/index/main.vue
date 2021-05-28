@@ -123,6 +123,11 @@
 						title: 'pano',
 						name: 'webview地图轨迹',
 						color: ''
+					},
+					{
+						title: 'guide',
+						name: '引导页面',
+						color: ''
 					}
 				],
 				yangshi: [{
@@ -610,5 +615,9 @@
 	.bg-kuxuan10 {
 		color: #fff;
 		background: #0396FF;
+	}
+	.bg-kuxuan11 {
+		color: #fff;
+		background: #FFC32E;
 	}
 </style>
