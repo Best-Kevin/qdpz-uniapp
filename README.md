@@ -87,12 +87,12 @@
 
 ### 其他说明
 > *  查看最新项目，请使用微信搜索小程序：“7he丶Kevin”
-> *  作者 首页 [www.zhoukaiwen.com](https://www.zhoukaiwen.com)（维护中...）
+> *  作者 首页 [www.zhoukaiwen.com](https://www.zhoukaiwen.com)（访问权限）
 
 
 ### 「前端铺子」交流群
 > * 如二维码过期，请联系作者微信：280224091
-<img src="https://cdn.zhoukaiwen.com/qdpz_ewm.jpeg" width="300px" />
+<img src="https://cdn.zhoukaiwen.com/wechat_ewm.jpeg" width="300px" />
 
 
 
