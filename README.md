@@ -92,7 +92,7 @@
 
 ### 「前端铺子」交流群
 > * 如二维码过期，请联系作者微信：280224091
-<img src="https://cdn.zhoukaiwen.com/wechat_ewm.jpeg" width="300px" />
+<img src="https://cdn.zhoukaiwen.com/wechat_ewm66.jpeg" width="300px" />
 
 
 
