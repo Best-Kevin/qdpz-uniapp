@@ -1,4 +1,5 @@
-const baseUrl = 'https://xxxxxxx.com/xxxxx/' //你的接口地址
+
+const baseUrl = 'https://cdn.zhoukaiwen.com/';
 
 // 不带token请求
 const httpRequest = (opts, data) => {
@@ -50,13 +51,14 @@ const httpTokenRequest = (opts, data) => {
 		return false
 	});
 	let token = uni.getStorageSync('token');
+	// hadToken()
 	if (token == '' || token == undefined || token == null) {
 		uni.showToast({
 			title: '账号已过期，请重新登录',
 			icon: 'none',
 			complete: function() {
 				uni.reLaunch({
-					url: '/pages/login/login'
+					url: '/pages/login/index'
 				});
 			}
 		});
@@ -84,15 +86,28 @@ const httpTokenRequest = (opts, data) => {
 						resolve(res[1])
 					} else {
 						if (res[1].data.code == 5000) {
+							// uni.showModal({
+							// 	title: '提示',
+							// 	content: res[1].data.message,
+							// 	success: function (res) {
+							// 		if (res.confirm) {
+							// 			uni.reLaunch({
+							// 				url: '/pages/login/login'
+							// 			});
+							// 			uni.clearStorageSync();
+							// 		} 
+							// 	}
+							// });
 							uni.reLaunch({
-								url: '/pages/login/login'
+								url: '/pages/login/index'
 							});
 							uni.clearStorageSync();
 						} else {
-							uni.showToast({
-								title: '' + res[1].data.message,
-								icon: 'none'
-							})
+							resolve(res[1])
+							// uni.showToast({
+							// 	title: '' + res[1].data.message,
+							// 	icon: 'none'
+							// })
 						}
 					}
 				}
@@ -104,34 +119,30 @@ const httpTokenRequest = (opts, data) => {
 		})
 		return promise
 	}
+	// let token = uni.getStorageSync('token')
+	//此token是登录成功后后台返回保存在storage中的
 
 };
+const hadToken = () => {
+	let token = uni.getStorageSync('token');
 
+	if (token == '' || token == undefined || token == null) {
+		uni.showToast({
+			title: '账号已过期，请重新登录',
+			icon: 'none',
+			complete: function() {
+				uni.reLaunch({
+					url: '/pages/login/index'
+				});
+			}
+		});
+		return false;
+	}
+	return true
+}
 export default {
 	baseUrl,
 	httpRequest,
-	httpTokenRequest
+	httpTokenRequest,
+	hadToken
 }
-
-
-// 页面中请求示例
-	// let opts = {
-	// 	url: 'xxxx/xxxx/login',
-	// 	method: 'get'
-	// };
-	// let params = {
-	// 	userName: '凯文童鞋',
-	// 	password: '123456'
-	// };
-	// uni.showLoading({
-	// 	title: '加载中'
-	// })
-	// console.log('参数', params);
-	// this.$myRequest.httpRequest(opts, params).then(res => {
-	// 	console.log('登录', res);
-	// 	if (res.data.code == 200) {
-	// 		console.log('成功')
-	// 	} else {
-	// 		tconsole.log('失败')
-	// 	}
-	// });

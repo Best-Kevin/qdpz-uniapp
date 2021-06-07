@@ -128,6 +128,11 @@
 						title: 'guide',
 						name: '引导页面',
 						color: ''
+					},
+					{
+						title: 'request',
+						name: '模拟数据加载',
+						color: ''
 					}
 				],
 				yangshi: [{
@@ -617,6 +622,10 @@
 		background: #0396FF;
 	}
 	.bg-kuxuan11 {
+		color: #fff;
+		background: #00c4fb;
+	}
+	.bg-kuxuan12 {
 		color: #fff;
 		background: #FFC32E;
 	}
