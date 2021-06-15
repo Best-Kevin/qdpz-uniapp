@@ -72,16 +72,16 @@
 
 		<view class="cu-card case no-card">
 
-			<view @click="goProject" class="cu-item shadow" v-for="(item, index) in projectList" :key="index">
+			<view @click="goProject(item.id)" class="cu-item shadow" v-for="(item, index) in projectList" :key="index">
 				<view class="image">
-					<image :src="item.imgUrl" mode="widthFix"></image>
-					<view class="cu-tag bg-gradual-orange">可商用</view>
+					<image :src="item.tImg" mode="widthFix"></image>
+					<view class="cu-tag bg-gradual-orange">{{item.tabs}}</view>
 					<view class="cu-bar bg-shadeBottom"> <text class="text-cut">{{item.type}}</text></view>
 				</view>
 				<view class="cu-list menu-avatar">
 					<view class="cu-item">
 						<view class="margin-lr flex-sub">
-							<view class="item-name text-grey text-lg">{{item.name}}</view>
+							<view class="item-name text-grey text-lg">{{item.title}}</view>
 							<view class="text-gray text-sm flex justify-between">
 								{{item.time}}
 								<view class="text-gray text-sm">
@@ -208,9 +208,9 @@
 					url: '../project/list'
 				})
 			},
-			goProject(){
+			goProject(id){
 				uni.navigateTo({
-					url: '../project/project'
+					url: '../project/project?proId='+id
 				})
 			},
 			goVideo(){
