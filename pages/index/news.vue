@@ -17,8 +17,7 @@
 			<view class="cu-item shadow borderBottom" @click="goNews">
 				<view class="title"><view class="text-cut">来，一起手撕32个大厂高频面试编程题</view></view>
 				<view class="content">
-					<image src="http://cdn.zhoukaiwen.com/5a97516eada18453046c61a263f41ef9.jpg"
-					 mode="aspectFill"></image>
+					<image src="https://zhoukaiwen.com/img/kevinLogo.png" mode="aspectFit"></image>
 					<view class="desc">
 						<view class="text-content">作为前端开发，JS是重中之重，总结下32个手写JS问题，这些都是高频面试题，希望对你能有所帮助。</view>
 						<view class="margin-top-xs">

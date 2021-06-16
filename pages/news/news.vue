@@ -88,8 +88,8 @@
 				this.getData = {
 					title: '来，一起手撕32个大厂高频面试编程题',
 					createTime: '2020年11月03日',
-					url: 'http://cdn.zhoukaiwen.com/5a97516eada18453046c61a263f41ef9.jpg',
-					content: "来，一起手撕32个大厂高频面试编程题，来，一起手撕32个大厂高频面试编程题，来，一起手撕32个大厂高频面试编程题。",
+					url: 'https://zhoukaiwen.com/img/kevinLogo.png',
+					content: "来，一起手撕32个大厂高频面试编程题。1. 浏览器分类：浏览器：IE，Chrome，FireFox，Safari，Opera。内核：Trident，Gecko，Presto，Webkit。"
 				};
 			},
 			upper: function(e) {
