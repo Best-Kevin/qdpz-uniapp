@@ -101,7 +101,7 @@
 </template>
 
 <script>
-	import proData from "@/common/projectData.js";
+	import request from '@/common/request.js';
 	import addTip from "../../components/wxcomponents/struggler-uniapp-add-tip/struggler-uniapp-add-tip.vue"
 	export default {
 		components: {
@@ -177,7 +177,7 @@
 						content: 'uniapp开发完成上线的打包流程，上架商店等...',
 					},
 				],
-				projectList: proData
+				projectList: [],
 			}
 		},
 		watch: {
@@ -185,8 +185,28 @@
 		},
 		mounted() {
 			console.log(this.projectList)
+			this.getData();
 		},
 		methods: {
+			getData() {
+				console.log('数据加载')
+				let opts = {
+					url: 'json/project.json',
+					method: 'get'
+				};
+				uni.showLoading({
+					title: '加载中'
+				})
+				request.httpRequest(opts).then(res => {
+					console.log(res);
+					uni.hideLoading();
+					if(res.statusCode == 200){
+						this.projectList = res.data.data;
+					}else{
+						
+					}
+				});
+			},
 			scroll: function(e) {
 				console.log(e)
 				this.old.scrollTop = e.detail.scrollTop

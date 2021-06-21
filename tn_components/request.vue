@@ -30,7 +30,7 @@
 			getData() {
 				console.log('数据加载')
 				let opts = {
-					url: 'requestTest.json',
+					url: 'json/project.json',
 					method: 'get'
 				};
 				// let params = {

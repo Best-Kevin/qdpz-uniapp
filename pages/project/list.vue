@@ -46,23 +46,42 @@
 </template>
 
 <script>
-	import proData from "@/common/projectData.js";
+	import request from '@/common/request.js';
 	export default {
 		data() {
 			return {
 				list:[
 					'开源项目均可商用，如有需要请移步至Git或联系作者，微信：280224091'
 				],
-				projectList: proData
+				projectList: []
 			}
 		},
 		watch: {
 
 		},
 		mounted() {
-			
+			this.getData();
 		},
 		methods: {
+			getData() {
+				console.log('数据加载')
+				let opts = {
+					url: 'json/project.json',
+					method: 'get'
+				};
+				uni.showLoading({
+					title: '加载中'
+				})
+				request.httpRequest(opts).then(res => {
+					console.log(res);
+					uni.hideLoading();
+					if(res.statusCode == 200){
+						this.projectList = res.data.data;
+					}else{
+						
+					}
+				});
+			},
 			goProject(id){
 				uni.navigateTo({
 					url: 'project?proId='+id
