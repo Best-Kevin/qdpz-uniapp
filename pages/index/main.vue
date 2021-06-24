@@ -3,19 +3,6 @@
 		<view style="margin-top:-50rpx;height: 486rpx;">
 			<image src='https://s1.ax1x.com/2020/09/16/wccQQP.png' mode='widthFix' class='png' style='width:100%;height:486rpx'></image>
 		</view>
-		
-		<view class="title-header">
-			<view class="title-text">
-				设 / 计 / 模 / 版
-			</view>
-		</view>
-		
-		<view class='nav-list margin-top'>
-			<navigator open-type="navigate" hover-class='none' :url="'../design?type=' + index" :class="'nav-li bg-index' + (index+1)"
-			 v-for="(item, index) in Template" :key="index">
-				<view class="nav-name">{{item.name}}</view>
-			</navigator>
-		</view>
 
 		<view class="title-header">
 			<view class="title-text">
@@ -39,6 +26,19 @@
 		<view class='nav-list margin-top'>
 			<navigator open-type="navigate" hover-class='none' :url="'/tn_components/' + item.title" :class="'nav-li bg-exper' + (index+1)"
 			 v-for="(item, index) in yangshi" :key="index">
+				<view class="nav-name">{{item.name}}</view>
+			</navigator>
+		</view>
+		
+		<view class="title-header">
+			<view class="title-text">
+				设 / 计 / 模 / 版
+			</view>
+		</view>
+		
+		<view class='nav-list margin-top'>
+			<navigator open-type="navigate" hover-class='none' :url="'../design?type=' + index" :class="'nav-li bg-index' + (index+1)"
+			 v-for="(item, index) in Template" :key="index">
 				<view class="nav-name">{{item.name}}</view>
 			</navigator>
 		</view>
