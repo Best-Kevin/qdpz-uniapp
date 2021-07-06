@@ -94,8 +94,8 @@
 
 
 ### 「前端铺子」交流群
-> * 如二维码过期，请联系作者微信：280224091
-<img src="https://zhoukaiwen.com/img/wechat_ewm706.jpeg" width="300px" />
+> * 群聊人数已超过200人，加群微信添加：280224091
+<img src="https://zhoukaiwen.com/img/wechat_ewmN.jpeg" width="300px" />
 
 
 
