@@ -94,7 +94,7 @@
 
 
 ### 「前端铺子」交流群
-> * 群聊人数已超过200人，加群微信添加：280224091
+> * 群聊人数已超过200人，加群微信添加：280224091（加备注信息：Gitee）
 <img src="https://zhoukaiwen.com/img/wechat_ewmN.jpeg" width="300px" />
 
 
