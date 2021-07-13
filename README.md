@@ -69,8 +69,8 @@
 <img src="https://cdn.zhoukaiwen.com/FotoJet2.png" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/FotoJet3.png" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/FotoJet4.png" width="100%" />
-<img src="https://cdn.zhoukaiwen.com/FotoJet5.png" width="100%" />
 <img src="https://zhoukaiwen.com/img/Design/app/FotoJet6.jpg" width="100%" />
+<img src="https://cdn.zhoukaiwen.com/FotoJet5.png" width="100%" />
 
 
 ### 安装教程
