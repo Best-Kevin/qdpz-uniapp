@@ -110,6 +110,11 @@
 						color: ''
 					},
 					{
+						title: 'keyboard',
+						name: '自定义键盘',
+						color: ''
+					},
+					{
 						title: 'search',
 						name: '便捷查询',
 						color: ''
@@ -611,22 +616,26 @@
 	}
 	.bg-kuxuan8 {
 		color: #fff;
-		background: #19CF8A;
+		background-color: #19CF8A;
 	}
 	.bg-kuxuan9 {
 		color: #fff;
-		background: #8799a3;
+		background-color: #8799a3;
 	}
 	.bg-kuxuan10 {
 		color: #fff;
-		background: #0396FF;
+		background-color: #0396FF;
 	}
 	.bg-kuxuan11 {
 		color: #fff;
-		background: #00c4fb;
+		background-color: #00c4fb;
 	}
 	.bg-kuxuan12 {
 		color: #fff;
-		background: #FFC32E;
+		background-color: #FFC32E;
+	}
+	.bg-kuxuan13 {
+		color: #fff;
+		background-color: #35e6c0;
 	}
 </style>

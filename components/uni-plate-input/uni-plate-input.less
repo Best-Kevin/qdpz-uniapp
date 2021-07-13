@@ -1,0 +1,154 @@
+.so-mask {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 998;
+}
+.so-plate {
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	background: #fff;
+	padding: 25upx 25upx 0 25upx;
+	&-head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&-type {			
+		flex:1;
+		display:block;
+		label {
+			display: inline-block;
+			min-height: 32upx;
+			font-size: 26upx;
+			margin-right: 10upx;
+		}
+	}
+	&-body {
+		box-sizing: border-box;
+		padding: 30upx 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&-word {
+		border: 1upx solid #ccc;
+		border-radius: 10upx;
+		height: 0;
+		margin: 0 5upx;
+		box-sizing: border-box;
+		padding-bottom: calc((100% - 70upx) / 7);
+		width: calc((100% - 70upx) / 7);
+		position: relative;
+		&.active {
+			border-color: #007aff;
+			box-shadow: 0 0 15upx 0 #007aff;
+		}
+		text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			font-weight: 700;
+			font-size: 32upx;
+		}
+	}
+	&-dot {
+		width: 15upx;
+		height: 15upx;
+		background: #ccc;
+		border-radius: 50%;
+		margin: 0 5upx;
+	}
+	&-keyboard {
+		background: #eee;
+		margin-left: -25upx;
+		margin-right: -25upx;
+		padding: 20upx 25upx 10upx 25upx;
+		box-sizing: border-box;
+		transition: all .3s;
+		&>view{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+	&-key {
+		display: block;
+		background: #fff;
+		border-radius: 10upx;
+		box-shadow: 0 0 8upx 0 #bbb;
+		width: 80upx;
+		height: 80upx;
+		margin: 5upx 0;
+		font-size: 32upx;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		&.hover {
+			background: #efefef;
+		}
+		&.fill-block {
+			width: 80upx;
+			height: 80upx;
+			background: none;
+			box-shadow: none;
+		}
+	}
+	&-btn {
+		display: inline-block;
+		background: #fff;
+		border-radius: 10upx;
+		box-shadow: 0 0 10upx 0 #bbb;
+		font-size: 28upx;
+		text-align: center;
+		margin:0 0 0 10upx;
+		padding:0 25upx;
+		&-group{
+			display: flex;
+			justify-content: space-between;
+			background: #eee;
+			margin-left: -25upx;
+			margin-right: -25upx;
+			box-sizing: border-box;
+			padding: 0 25upx 10upx 25upx;
+		}
+		&--cancel{
+			margin:0;
+		}
+		&--submit{
+			background:#5773f9;
+			color:#fff;
+		}
+		&--delete{
+			color:#fd6b6d;
+		}
+	}
+}
+
+
+.animation-scale-up {
+	animation-duration: .2s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: both;
+    animation-name: scale-up
+}
+@keyframes scale-up {
+    0% {
+        opacity: .8;
+        transform: scale(.8)
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
