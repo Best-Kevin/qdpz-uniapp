@@ -48,6 +48,7 @@
 > * 主题切换
 > * 渐变动画
 > * 加载动画
+> * 自定义键盘
 > * 行政区域图
 > * 海报生成器
 > * 自定义相机
@@ -69,6 +70,7 @@
 <img src="https://cdn.zhoukaiwen.com/FotoJet3.png" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/FotoJet4.png" width="100%" />
 <img src="https://cdn.zhoukaiwen.com/FotoJet5.png" width="100%" />
+<img src="https://cdn.zhoukaiwen.com/FotoJet6.png" width="100%" />
 
 
 ### 安装教程
