@@ -282,7 +282,21 @@
 						}
 					},
 					animationEnd: function() {
-						// 轨迹回放完成
+						// 轨迹回放完成 处理H5端
+						_this.playIndex++;
+						if(_this.playIndex < len){
+							_this.start(_this.playIndex, data);
+						}else{
+							console.log('okokok');
+							uni.showToast({
+								title: '播放完成',
+								duration: 1400,
+								icon: 'none'
+							});
+							_this.playIndex = 0;
+							_this.isStart = false;
+							_this.isDisabled = false;
+						}
 					},
 					fail(e) {
 						// 轨迹回放失败
