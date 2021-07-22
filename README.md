@@ -73,12 +73,6 @@
 <img src="https://cdn.zhoukaiwen.com/FotoJet5.png" width="100%" />
 
 
-### 安装教程
-
-1.  下载安装：「HBuildX」、「微信开发者工具」
-2.  扫码登陆微信开发者工具
-3.  将项目拖进【HBuildX】- 运行 - 微信小程序 - 完成
-
 ### 目录说明
 ```                
 colorui            	// colorui插件依赖
@@ -97,6 +91,13 @@ README.md			// 说明文档
 uni.scss			// uniapp内置的常用样式变量
 
 ```
+
+### 安装教程
+
+1.  下载安装：「HBuildX」、「微信开发者工具」
+2.  扫码登陆微信开发者工具
+3.  将项目拖进【HBuildX】- 运行 - 微信小程序 - 完成
+
 
 ### 项目信息
 
