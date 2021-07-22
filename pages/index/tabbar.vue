@@ -70,18 +70,13 @@
 		data() {
 			return {
 				PageCur: 'index',
-
 				message: '2',
 				openId:'',
 				access_token:'',
-				
 				tip:"我是提示",
 				duration:1
 
 			};
-		},
-		created() {
-			
 		},
 		// 分享小程序
 		onShareAppMessage(res) {
