@@ -17,6 +17,8 @@
 	</view>
 </template>
 
+<!-- 注：vue只支持小程序及H5，如打包App，请修改代码为nvue，或加群要文件 -->
+
 <script>
 	export default {
 		data() {
