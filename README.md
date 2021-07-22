@@ -79,7 +79,24 @@
 2.  扫码登陆微信开发者工具
 3.  将项目拖进【HBuildX】- 运行 - 微信小程序 - 完成
 
+### 目录说明
+```                
+colorui            	// colorui插件依赖
+common              // 项目相关公共js方法
+components          // 项目中使用到的功能封装
+pages      			// 页面入口文件夹
+static            	// 静态资源
+tn_components       // 组件模板页面入口
+uview-ui			// uview-ui插件依赖
+App.vue				// vue项目入口文件
+LICENSE				// 许可证
+main.js				// 公共js
+manifest.json		// uniapp项目配置文件
+pages.json			// 页面路由配置页
+README.md			// 说明文档
+uni.scss			// uniapp内置的常用样式变量
 
+```
 
 ### 项目信息
 
