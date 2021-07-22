@@ -98,113 +98,119 @@
 	"subPackages": [{
 		"root": "tn_components",
 		"pages": [{
-			"path": "pano",
-			"style": {}
-		}, {
-			"path": "bggrad",
-			"style": {
-				"navigationStyle": "custom"
+				"path": "pano",
+				"style": {}
+			}, {
+				"path": "bggrad",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "bgcolor",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "ancube",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "anloading",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "mimicry",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "mapLocus",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "charts",
+				"style": {
+					"navigationBarTitleText": "图表展示"
+				}
+			},
+			{
+				"path": "poster",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "discern",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "sign",
+				"style": {
+					"navigationBarTitleText": "电子签名"
+				}
+			}, {
+				"path": "district",
+				"style": {
+					"navigationBarTitleText": "行政区图"
+				}
+			},
+			{
+				"path": "search",
+				"style": {
+					"navigationStyle": "custom",
+					"navigationBarTitleText": "便捷查询"
+				}
+			},
+			{
+				"path": "openDocument",
+				"style": {
+					"navigationStyle": "custom",
+					"navigationBarTitleText": "文档预览"
+				}
+			},
+			{
+				"path": "company",
+				"style": {
+					"navigationBarTitleText": "自定义相机"
+				}
+			},
+			{
+				"path": "timeline",
+				"style": {
+					"navigationBarTitleText": "时间轴"
+				}
+			},
+			{
+				"path": "guide",
+				"style": {
+					"navigationStyle": "custom",
+					"navigationBarTitleText": "引导页面"
+				}
+			},
+			{
+				"path": "request",
+				"style": {
+					"navigationStyle": "custom",
+					"navigationBarTitleText": "模拟数据加载"
+				}
+			},
+			{
+				"path": "keyboard",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "/drag_demo/index",
+				"style": {
+					"navigationBarTitleText": "悬浮球"
+				}
 			}
-		}, {
-			"path": "bgcolor",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		}, {
-			"path": "ancube",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		}, {
-			"path": "anloading",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		}, {
-			"path": "mimicry",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		}, {
-			"path": "mapLocus",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "charts",
-			"style": {
-				"navigationBarTitleText": "图表展示"
-			}
-		},
-		{
-			"path": "poster",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "discern",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		},{
-			"path": "sign",
-			"style": {
-				"navigationBarTitleText": "电子签名"
-			}
-		},{
-			"path": "district",
-			"style": {
-				"navigationBarTitleText": "行政区图"
-			}
-		},
-		{	
-			"path": "search",
-			"style": {
-				"navigationStyle": "custom",
-				"navigationBarTitleText": "便捷查询"
-			}
-		},
-		{
-			"path": "openDocument",
-			"style": {
-				"navigationStyle": "custom",
-				"navigationBarTitleText": "文档预览"
-			}
-		},
-		{
-			"path": "company",
-			"style": {
-				"navigationBarTitleText": "自定义相机"
-			}
-		},
-		{
-			"path": "timeline",
-			"style": {
-				"navigationBarTitleText": "时间轴"
-			}
-		},
-		{
-			"path": "guide",
-			"style": {
-				"navigationStyle": "custom",
-				"navigationBarTitleText": "引导页面"
-			}
-		},
-		{
-			"path": "request",
-			"style": {
-				"navigationStyle": "custom",
-				"navigationBarTitleText": "模拟数据加载"
-			}
-		},
-		{
-			"path": "keyboard",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		}
 		]
 	}],
 	"globalStyle": {

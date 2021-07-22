@@ -130,8 +130,8 @@
 						color: ''
 					},
 					{
-						title: 'guide',
-						name: '引导页面',
+						title: 'drag_demo/index',
+						name: '悬浮球',
 						color: ''
 					},
 					{
