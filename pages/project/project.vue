@@ -13,8 +13,8 @@
 			</view>
 
 			<view class="explainBox">
-				<view class="explainItem" v-for="(item, index) in data" :key="index">
-					<span>{{ projectList[isIndex].introduceText[0] }}</span>
+				<view class="explainItem" v-for="(item, index) in projectList[isIndex].introduceText" :key="index">
+					<span>{{ projectList[isIndex].introduceText[index] }}</span>
 				</view>
 			</view>
 
