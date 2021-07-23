@@ -2,7 +2,6 @@
 // const baseUrl = 'https://cdn.zhoukaiwen.com/';
 const baseUrl = 'https://www.zhoukaiwen.com/';
 
-
 // 不带token请求
 const httpRequest = (opts, data) => {
 	uni.onNetworkStatusChange(function(res) {
