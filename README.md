@@ -74,7 +74,7 @@
 
 
 ### 目录说明
-```                
+```       
 ├─colorui        		// colorui插件依赖
 ├─common              	// 项目相关公共js方法
 │	├─amap-wx.js		// 高德地图依赖js
@@ -83,7 +83,7 @@
 │	├─projectData.js	// 项目模拟数据
 │	├─qqmap-wx-jssdk.js	// 腾讯地图依赖js
 │	├─request.js		// 数据请求封装
-│	├─uiImg.js			// 模拟数据
+│	└─uiImg.js			// 模拟数据
 │
 ├─components          	// 项目中使用到的功能封装
 ├─pages      			// 页面入口文件夹
@@ -93,7 +93,7 @@
 │	├─project			// 项目展示页
 │	├─design			// 设计模板 · 瀑布流
 │	├─timeline			// 时间轴
-│	├─video				// 视频播放页
+│	└─video				// 视频播放页
 │
 ├─static            	// 静态资源
 ├─tn_components       	// 组件模板页面入口
@@ -104,7 +104,7 @@
 ├─manifest.json			// uniapp项目配置文件
 ├─pages.json			// 页面路由配置页
 ├─README.md				// 说明文档
-├─uni.scss				// uniapp内置的常用样式变量
+└─uni.scss				// uniapp内置的常用样式变量
 
 ```
 
