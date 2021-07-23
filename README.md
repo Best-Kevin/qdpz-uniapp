@@ -75,20 +75,36 @@
 
 ### 目录说明
 ```                
-colorui            	// colorui插件依赖
-common              // 项目相关公共js方法
-components          // 项目中使用到的功能封装
-pages      			// 页面入口文件夹
-static            	// 静态资源
-tn_components       // 组件模板页面入口
-uview-ui			// uview-ui插件依赖
-App.vue				// vue项目入口文件
-LICENSE				// 许可证
-main.js				// 公共js
-manifest.json		// uniapp项目配置文件
-pages.json			// 页面路由配置页
-README.md			// 说明文档
-uni.scss			// uniapp内置的常用样式变量
+├─colorui        		// colorui插件依赖
+├─common              	// 项目相关公共js方法
+│	├─amap-wx.js		// 高德地图依赖js
+│	├─classify.data.js	// 模拟数据
+│	├─geocode-utils.js	// 腾讯地图方法封装
+│	├─projectData.js	// 项目模拟数据
+│	├─qqmap-wx-jssdk.js	// 腾讯地图依赖js
+│	├─request.js		// 数据请求封装
+│	├─uiImg.js			// 模拟数据
+│
+├─components          	// 项目中使用到的功能封装
+├─pages      			// 页面入口文件夹
+│	├─index				// 主页4个TabBar页面
+│	├─me				// 个人中心内页面
+│	├─news				// 新闻页
+│	├─project			// 项目展示页
+│	├─design			// 设计模板 · 瀑布流
+│	├─timeline			// 时间轴
+│	├─video				// 视频播放页
+│
+├─static            	// 静态资源
+├─tn_components       	// 组件模板页面入口
+├─uview-ui				// uview-ui插件依赖
+├─App.vue				// vue项目入口文件
+├─LICENSE				// 许可证
+├─main.js				// 公共js
+├─manifest.json			// uniapp项目配置文件
+├─pages.json			// 页面路由配置页
+├─README.md				// 说明文档
+├─uni.scss				// uniapp内置的常用样式变量
 
 ```
 
