@@ -206,7 +206,7 @@
 				}
 			},
 			{
-				"path": "/drag_demo/index",
+				"path": "drag_demo/index",
 				"style": {
 					"navigationBarTitleText": "悬浮球"
 				}
