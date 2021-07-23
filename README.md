@@ -3,11 +3,11 @@
 </p>
 
 <p align="center">
-	<a href="https://gitee.com/kevin_chou/front-end-pu-zi/stargazers" target="_blank">
-		<img src="https://svg.hamm.cn/gitee.svg?type=star&user=kevin_chou&project=front-end-pu-zi"/>
+	<a href="https://gitee.com/kevin_chou/qdpz/stargazers" target="_blank">
+		<img src="https://svg.hamm.cn/gitee.svg?type=star&user=kevin_chou&project=qdpz"/>
 	</a>
-	<a href="https://gitee.com/kevin_chou/front-end-pu-zi/members" target="_blank">
-		<img src="https://svg.hamm.cn/gitee.svg?type=fork&user=kevin_chou&project=front-end-pu-zi"/>
+	<a href="https://gitee.com/kevin_chou/qdpz/members" target="_blank">
+		<img src="https://svg.hamm.cn/gitee.svg?type=fork&user=kevin_chou&project=qdpz"/>
 	</a>
 	<img src="https://svg.hamm.cn/badge.svg?key=Platform&value=微信小程序"/>
 </p>
