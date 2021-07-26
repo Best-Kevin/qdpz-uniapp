@@ -74,7 +74,7 @@
 
 
 ### 目录说明
-```       
+```                
 ├─colorui        		// colorui插件依赖
 ├─common              	// 项目相关公共js方法
 │	├─amap-wx.js		// 高德地图依赖js
@@ -108,7 +108,6 @@
 
 ```
 
-
 ### 安装教程
 
 1.  下载安装：「HBuildX」、「微信开发者工具」
@@ -133,6 +132,7 @@
 群聊人数已超过200人，加群微信添加：280224091（加备注信息：Gitee）
 <p>
 <img src="https://zhoukaiwen.com/img/wechat_ewmN.jpeg" width="300px" />
+<img src="https://zhoukaiwen.com/img/kevinWechat.jpeg" width="300px" />
 </p>
 
 
