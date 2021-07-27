@@ -1,7 +1,8 @@
 <template>
 	<view class="components-home">
 		<view style="margin-top:-50rpx;height: 486rpx;">
-			<image src='https://s1.ax1x.com/2020/09/16/wccQQP.png' mode='widthFix' class='png' style='width:100%;height:486rpx'></image>
+			<image src='https://s1.ax1x.com/2020/09/16/wccQQP.png' mode='widthFix' class='png'
+				style='width:100%;height:486rpx'></image>
 		</view>
 
 		<view class="title-header">
@@ -11,8 +12,8 @@
 		</view>
 
 		<view class='nav-list margin-top'>
-			<navigator open-type="navigate" hover-class='none' :url="'/tn_components/' + item.title" :class="'nav-li bg-kuxuan' + (index+1)"
-			 v-for="(item, index) in kuxuan" :key="index">
+			<navigator open-type="navigate" hover-class='none' :url="'/tn_components/' + item.title"
+				:class="'nav-li bg-kuxuan' + (index+1)" v-for="(item, index) in kuxuan" :key="index">
 				<view class="nav-name">{{item.name}}</view>
 			</navigator>
 		</view>
@@ -24,25 +25,39 @@
 		</view>
 
 		<view class='nav-list margin-top'>
-			<navigator open-type="navigate" hover-class='none' :url="'/tn_components/' + item.title" :class="'nav-li bg-exper' + (index+1)"
-			 v-for="(item, index) in yangshi" :key="index">
+			<navigator open-type="navigate" hover-class='none' :url="'/tn_components/' + item.title"
+				:class="'nav-li bg-exper' + (index+1)" v-for="(item, index) in yangshi" :key="index">
 				<view class="nav-name">{{item.name}}</view>
 			</navigator>
 		</view>
-		
+
 		<view class="title-header">
 			<view class="title-text">
 				设 / 计 / 模 / 版
 			</view>
 		</view>
-		
+
 		<view class='nav-list margin-top'>
-			<navigator open-type="navigate" hover-class='none' :url="'../design?type=' + index" :class="'nav-li bg-index' + (index+1)"
-			 v-for="(item, index) in Template" :key="index">
+			<navigator open-type="navigate" hover-class='none' :url="'../design?type=' + index"
+				:class="'nav-li bg-index' + (index+1)" v-for="(item, index) in Template" :key="index">
 				<view class="nav-name">{{item.name}}</view>
 			</navigator>
 		</view>
-		
+
+		<view class="title-header">
+			<view class="title-text">
+				友 / 情 / 链 / 接
+			</view>
+		</view>
+
+		<view class='nav-list margin-top'>
+			<navigator target="miniProgram" :app-id='item.appId' version='release' hover-class='none'
+				:url="'../design?type=' + index" :class="'nav-li bg-kuxuan' + (index+1)"
+				v-for="(item, index) in Links" :key="index">
+				<view class="nav-name">{{item.name}}</view>
+			</navigator>
+		</view>
+
 		<view style="height: 120rpx;width: 1rpx;"></view>
 	</view>
 </template>
@@ -52,8 +67,24 @@
 		name: 'Components',
 		data() {
 			return {
-				Template:[
+				Links: [{
+						name: 'uView',
+						appId: 'wxc256e348c4032ebd'
+					},
 					{
+						name: 'colorUi',
+						appId: 'wxfd5241d66a07713f'
+					},
+					{
+						name: '图鸟科技',
+						appId: 'wxa698b1eee960632f'
+					},
+					{
+						name: 'uniApp',
+						appId: 'wx999bf02c8e05dfc9'
+					}
+				],
+				Template: [{
 						title: 'gamecube',
 						name: 'App设计',
 						color: ''
@@ -556,10 +587,12 @@
 		background-color: #FF4F94;
 		color: #fff;
 	}
+
 	.bg-exper2 {
 		background-color: #006FFF;
 		color: #fff;
 	}
+
 	.bg-exper3 {
 		background-color: #19D08B;
 		color: #fff;
@@ -610,30 +643,37 @@
 		background-color: #BC78EC;
 		color: #fff;
 	}
+
 	.bg-kuxuan7 {
 		background-color: #f39902;
 		color: #fff;
 	}
+
 	.bg-kuxuan8 {
 		color: #fff;
 		background-color: #19CF8A;
 	}
+
 	.bg-kuxuan9 {
 		color: #fff;
 		background-color: #8799a3;
 	}
+
 	.bg-kuxuan10 {
 		color: #fff;
 		background-color: #0396FF;
 	}
+
 	.bg-kuxuan11 {
 		color: #fff;
 		background-color: #00c4fb;
 	}
+
 	.bg-kuxuan12 {
 		color: #fff;
 		background-color: #FFC32E;
 	}
+
 	.bg-kuxuan13 {
 		color: #fff;
 		background-color: #35e6c0;
