@@ -25,7 +25,7 @@
 		</navigator>
 		<!-- 弹窗确认 -->
 		<view class="cu-modal" :class="modalName=='Modal'?'show':''">
-			<view class="cu-dialog">
+			<view class="cu-dialog" style="padding: 300rpx 0 70rpx;">
 				<view class="modal_bg"></view>
 				<view class="modal_main">
 					<view class='nav-list margin-top'>
@@ -69,17 +69,17 @@
 		<block>
 			<view class='padding flex text-center text-grey bg-white shadow-warp-my'>
 				<view class='flex flex-sub flex-direction solid-right'>
-					<view class="text-xxl text-orange">829</view>
+					<view class="text-xxl text-orange">6500+</view>
 					<view class="margin-top-sm">
 						<text class='cuIcon-hot'></text> 访客</view>
 				</view>
 				<view class='flex flex-sub flex-direction solid-right'>
-					<view class="text-xxl text-blue">86</view>
+					<view class="text-xxl text-blue">1053</view>
 					<view class="margin-top-sm">
 						<text class='cuIcon-share'></text> 分享</view>
 				</view>
 				<view class='flex flex-sub flex-direction'>
-					<view class="text-xxl text-red">142</view>
+					<view class="text-xxl text-red">665</view>
 					<view class="margin-top-sm">
 						<text class='cuIcon-like'></text> 点赞</view>
 				</view>
@@ -132,11 +132,18 @@
 						<text class="text-grey text-sm">共4款</text>
 					</view>
 				</view> -->
-
+				
 				<view class="cu-item">
 					<button class='content cu-btn' open-type="share">
 						<image src='../../static/me/icon/lvhang.png' class='png' mode='aspectFit'></image>
 						<text class='text-lg margin-sm'>分享小程序</text>
+					</button>
+				</view>
+				
+				<view class="cu-item">
+					<button class='content cu-btn' @tap="showGitee" data-target="ModalGitee">
+						<image style="border-radius: 50rpx;" src='https://zhoukaiwen.com/img/icon/gitee_logo.jpeg' class='png' mode='aspectFit'></image>
+						<text class='text-lg margin-sm'>下载小程序源码</text>
 					</button>
 				</view>
 
@@ -189,6 +196,22 @@
 			</view>
 
 		</block>
+		
+		<!-- Gitee弹窗 -->
+		<view class="cu-modal" :class="modalName=='ModalGitee'?'show':''">
+			<view class="cu-dialog">
+				<view class="cu-bar bg-white justify-end">
+					<view class="content">Gitee访问</view>
+					<view class="action" @tap="hideModal">
+						<text class="cuIcon-close text-red"></text>
+					</view>
+				</view>
+				<view class="padding-xl">
+					<image src="https://zhoukaiwen.com/img/icon/qdpzGitee.png" mode="widthFix" style="width: 100%;"></image>
+					<p class="giteeClass" @click="getGitee">https://gitee.com/kevin_chou</p>
+				</view>
+			</view>
+		</view>
 
 		<view style="height: 110rpx;width: 1rpx;"></view>
 
@@ -275,6 +298,14 @@
 			// });
 		},
 		methods: {
+			getGitee(){
+				uni.setClipboardData({
+				    data: 'https://gitee.com/kevin_chou',
+				    success: function () {
+				        console.log('success');
+				    }
+				});
+			},
 			switchImage(index, name) {
 				this.topBackGroupImageIndex = index;
 				this.modalName = null;
@@ -282,6 +313,12 @@
 			},
 			showModal(e) {
 				this.modalName = e.currentTarget.dataset.target
+			},
+			showGitee(e){
+				this.modalName = e.currentTarget.dataset.target
+			},
+			hideModal(e) {
+				this.modalName = null
 			},
 
 			// 答题测试
@@ -482,13 +519,15 @@
 	.margin-bottom-my {
 		margin-bottom: 150rpx;
 	}
-
-
-	// 
+	.giteeClass{
+		margin-top: 30rpx;
+		font-size: 34rpx;
+		color: #2440B3;
+		text-decoration: underline;
+	}
 	.cu-dialog {
 		background: #FFFFFF;
 		overflow: visible;
-		padding: 300rpx 0 70rpx;
 	}
 
 	.modal_bg {
