@@ -8,7 +8,7 @@
 
 		<add-tip :tip="tip" :duration="duration" />
 
-		<!-- banner图 -->s
+		<!-- banner图 -->
 		<view class="uni-padding-wrap">
 			<view class="page-section swiper">
 				<view class="page-section-spacing">
