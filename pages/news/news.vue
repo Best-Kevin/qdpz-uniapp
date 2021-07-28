@@ -3,16 +3,18 @@
 	<view class="container">
 		<view style="background-color: #FFFFFF;padding: 30rpx 30rpx 30rpx 30rpx;">
 			<view class="titleBox text-xl text-black text-bold">{{getData.title}}</view>
-			<view class="timeBox text-df text-gray margin-top-sm margin-bottom-sm">{{getData.createTime}}</view>
-			<image mode="widthFix" :src="getData.url"></image>
+			<view class="timeBox text-df text-gray margin-top-sm margin-bottom-sm">{{getData.time}}</view>
+			<image mode="widthFix" :src="getData.tImg"></image>
 
 			<!-- 中间文章区域 -->
-			<view class="contentBox text-lg text-black margin-top-sm">
-				<view v-html="getData.content"></view>
+			<view class="contentBox text-lg text-black margin-top-sm margin-tb-lg">
+				<view v-html="getData.introduceText"></view>
 			</view>
+			
+			<image v-for="(item, index) in getData.introduceImg" :key="index" mode="widthFix" :src="item"></image>
 		</view>
 		
-		<view v-if="getData.evaluateList" style="background-color: #FFFFFF;padding: 0rpx 30rpx 15rpx0rpx;margin: 25rpx 0 170rpx 0;">
+		<view style="background-color: #FFFFFF;padding: 0rpx 30rpx 15rpx0rpx;margin: 25rpx 0 170rpx 0;">
 			<view class="cu-bar justify-left bg-white">
 				<view class="action border-title">
 					<text class="text-lg text-bold text-blue">评论</text>
@@ -20,18 +22,18 @@
 				</view>
 			</view>
 
-			<view v-if="getData.evaluateList.length < 1" class="text-lg text-bold text-center margin-bottom-lg">暂无评论</view>
+			<!-- <view class="text-lg text-bold text-center margin-bottom-lg">暂无评论</view> -->
 
-			<view v-if="getData.evaluateList.length > 0" class="cu-list menu-avatar comment solids-top">
-				<view class="cu-item" v-for="(item,index) in getData.evaluateList">
+			<view class="cu-list menu-avatar comment solids-top">
+				<view class="cu-item" >
 					<view class="cu-avatar round" style="background-image:url(http://1.85.32.5:49000/daxiang/common/20200918181604.png);"></view>
 					<view class="content">
-						<view class="text-grey">{{item.userName}}</view>
+						<view class="text-grey">凯文童鞋</view>
 						<view class="text-gray text-content text-df">
-							{{item.describ}}
+							速速前来围观吧～
 						</view>
 						<view class="margin-top-sm flex justify-between">
-							<view class="text-gray text-df">{{item.createTime}}</view>
+							<view class="text-gray text-df">2021.12.05</view>
 						</view>
 					</view>
 				</view>
@@ -59,6 +61,7 @@
 </template>
 
 <script>
+	import request from '@/common/request.js';
 	export default {
 		data() {
 			return {
@@ -68,14 +71,14 @@
 				},
 				getData: [],
 
-				detailsId: '',
+				newsId: '',
 				
 				comment_input:'',	//评论内容
 				praiseType: 0, //1点赞  2取消点赞
 			}
 		},
 		onLoad(option) {
-			this.detailsId = option.detailsId;
+			this.newsId = option.id;
 			this.getDataFun();
 		},
 		methods: {
@@ -85,12 +88,23 @@
 				}
 			},
 			getDataFun() {
-				this.getData = {
-					title: '来，一起手撕32个大厂高频面试编程题',
-					createTime: '2020年11月03日',
-					url: 'https://zhoukaiwen.com/img/kevinLogo.png',
-					content: "来，一起手撕32个大厂高频面试编程题。1. 浏览器分类：浏览器：IE，Chrome，FireFox，Safari，Opera。内核：Trident，Gecko，Presto，Webkit。"
+				let opts = {
+					url: 'json/newsList.json',
+					method: 'get'
 				};
+				uni.showLoading({
+					title: '加载中'
+				});
+				request.httpRequest(opts).then(res => {
+					console.log(res);
+					uni.hideLoading();
+					if (res.statusCode == 200) {
+						this.getData = res.data.data[this.newsId];
+						console.log(this.getData);
+					} else {
+						console.log('数据请求错误～');
+					}
+				});
 			},
 			upper: function(e) {
 				console.log(e)
@@ -137,28 +151,6 @@
 					title: '感谢参与',
 					duration: 2000
 				});
-				if (this.praiseType == 1) {
-					this.praiseType = 2;
-				} else if (this.praiseType == 2) {
-					this.praiseType = 1;
-				} else {
-					this.praiseType = 1;
-				}
-
-				// 提交点赞数据
-				let opts = {
-					url: `south/southEasyLesson/xcx/${this.detailsId}/type/${this.praiseType}`,
-					method: 'post'
-				};
-				request.httpTokenRequest(opts).then(res => {
-					console.log(res)
-					if (res.data.code == 200) {
-						this.getDataFun();
-					}
-				});
-
-				console.log(this.detailsId);
-				console.log(this.praiseType);
 			}
 		}
 	}

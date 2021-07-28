@@ -1,4 +1,4 @@
-<!-- 文章资讯 -->
+<!-- TabBar 文章资讯 -->
 <template>
 	<view>
 		<cu-custom bgColor="bg-gradual-blue" :isBack="false">
@@ -14,17 +14,17 @@
 		</scroll-view>
 		
 		<view class="cu-card article no-card">
-			<view class="cu-item shadow borderBottom" @click="goNews">
-				<view class="title"><view class="text-cut">来，一起手撕32个大厂高频面试编程题</view></view>
+			<view class="cu-item shadow borderBottom" v-for="(item, index) in newsList" :key="index" @click="goNews(item.id)">
+				<view class="title"><view class="text-cut">{{item.title}}</view></view>
 				<view class="content">
-					<image src="https://zhoukaiwen.com/img/kevinLogo.png" mode="aspectFit"></image>
+					<image :src="item.tImg" mode="aspectFit"></image>
 					<view class="desc">
-						<view class="text-content">作为前端开发，JS是重中之重，总结下32个手写JS问题，这些都是高频面试题，希望对你能有所帮助。</view>
+						<view class="text-content">{{item.introduceText}}</view>
 						<view class="margin-top-xs">
-							<view class="text-gray light sm round fl">2020年11月03日</view>
+							<view class="text-gray light sm round fl">{{item.time}}</view>
 							<view class="text-gray light sm round fr">
 								<text class="text-gray cuIcon-mark" style="font-size: 34rpx;"></text>
-								<text>11</text>
+								<text>{{item.read}}</text>
 							</view>
 						</view>
 					</view>
@@ -37,47 +37,75 @@
 </template>
 
 <script>
+	import request from '@/common/request.js';
 	export default {
 		data() {
 			return {
 				TabCur: 0,
 				scrollLeft: 0,
+				newsList: '',
 				navTop:[
 					{
 						id: 1,
-						title: 'UI设计'
+						title: '全部'
 					},
 					{
 						id: 2,
+						title: 'UI设计'
+					},
+					{
+						id: 3,
 						title: 'Web前端'
 					},
 					{
-						id:3,
+						id: 4,
 						title: 'Java后台'
 					},
 					{
-						id:4,
+						id: 5,
 						title: '面试精选'
 					},
 					{
-						id:5,
+						id: 6,
 						title: '技术前沿'
 					},
 					{
-						id:6,
+						id: 7,
 						title: '更多资讯'
 					}
 				]
 			};
 		},
+		mounted() {
+			this.getData();
+		},
 		methods: {
+			getData() {
+				let opts = {
+					url: 'json/newsList.json',
+					method: 'get'
+				};
+				uni.showLoading({
+					title: '加载中'
+				});
+				request.httpRequest(opts).then(res => {
+					// console.log(res);
+					uni.hideLoading();
+					if (res.statusCode == 200) {
+						this.newsList = res.data.data;
+						console.log(this.newsList);
+					} else {
+						console.log('数据请求错误～');
+					}
+				});
+			},
 			tabSelect(e) {
 				this.TabCur = e.currentTarget.dataset.id;
 				this.scrollLeft = (e.currentTarget.dataset.id - 1) * 60
 			},
-			goNews(){
+			goNews(id){
 				uni.navigateTo({
-					url: '../news/news'
+					url: '../news/news?id='+ id,
 				})
 			}
 		}
