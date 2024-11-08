@@ -6,7 +6,7 @@
 		{
 			"path": "pages/index/tabbar",
 			"style": {
-				"navigationBarTitleText": "宅家学IT",
+				"navigationBarTitleText": "前端铺子",
 				"navigationStyle": "custom"
 			}
 		},
@@ -47,13 +47,7 @@
 		{
 			"path": "pages/news/news",
 			"style": {
-				"navigationBarTitleText": "资讯详情"
-			}
-		},
-		{
-			"path": "pages/me/course",
-			"style": {
-				"navigationBarTitleText": "班级课程",
+				"navigationBarTitleText": "资讯详情",
 				"navigationStyle": "custom"
 			}
 		},
@@ -93,120 +87,451 @@
 			"style": {
 				"navigationStyle": "custom"
 			}
+		},
+		{
+			"path": "pages/main/customCamera",
+			"style": {
+				"navigationBarTitleText": "自定义相机/图片编辑器"
+			}
+		},
+		{
+			"path": "pages/main/posterList",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "海报设计工具"
+			}
+		},
+		{
+			"path": "pages/main/posterImg",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"subPackages": [{
+			"root": "tn_components",
+			"pages": [{
+					"path": "pano",
+					"style": {}
+				}, {
+					"path": "bggrad",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				}, {
+					"path": "bgcolor",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				}, {
+					"path": "ancube",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				}, {
+					"path": "anloading",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				}, {
+					"path": "mimicry",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				}, {
+					"path": "mapLocus",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "charts",
+					"style": {
+						"navigationBarTitleText": "图表展示"
+					}
+				},
+				{
+					"path": "poster",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "discern",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				}, {
+					"path": "sign",
+					"style": {
+						"navigationBarTitleText": "电子签名"
+					}
+				}, {
+					"path": "district",
+					"style": {
+						"navigationBarTitleText": "行政区图"
+					}
+				},
+				{
+					"path": "search",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "便捷查询"
+					}
+				},
+				{
+					"path": "salary",
+					"style": {
+						"navigationBarTitleText": "排行榜",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "course",
+					"style": {
+						"navigationBarTitleText": "班级课程",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "openDocument",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "文档预览"
+					}
+				},
+				{
+					"path": "company",
+					"style": {
+						"navigationBarTitleText": "自定义相机"
+					}
+				},
+				{
+					"path": "timeline",
+					"style": {
+						"navigationBarTitleText": "时间轴"
+					}
+				},
+				{
+					"path": "guide",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "引导页面"
+					}
+				},
+				{
+					"path": "request",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "模拟数据加载"
+					}
+				},
+				{
+					"path": "keyboard",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "drag_demo/index",
+					"style": {
+						"navigationBarTitleText": "悬浮球"
+					}
+				},
+				{
+					"path": "takePicture",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "摄影师资料"
+					}
+				},
+				{
+					"path": "photoWall/photoAll",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "照片墙首页"
+					}
+				},
+				{
+					"path": "photoWall/timeLine",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "照片墙第二页"
+					}
+				},
+				{
+					"path": "photoWall/imageList",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "照片墙第三页"
+					}
+				},
+				{
+					"path": "finance/index",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "金融量化页面"
+					}
+				},
+				{
+					"path": "finance/detail",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "金融量化详情"
+					}
+				},
+				{
+					"path": "timetables",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "课程表"
+					}
+				},
+				{
+					"path": "category",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "技术栈类目"
+					}
+				},
+				{
+					"path": "imageEditor",
+					"style": {
+						"navigationBarTitleText": "图片编辑器"
+					}
+				},
+				{
+					"path": "clock",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "每日签到"
+					}
+				},
+				{
+					"path": "medal",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "权益页面"
+					}
+				},
+				{
+					"path": "seat",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "在线选座"
+					}
+				},
+				// {
+				// 	"path": "loveChina",
+				// 	"style": {
+				// 		"navigationStyle": "custom",
+				// 		"navigationBarTitleText": "国庆头像"
+				// 	}
+				// },
+				{
+					"path": "chat/chat",
+					"style": {
+						"navigationBarTitleText": "Kevin聊天室",
+						"navigationBarBackgroundColor": "#f2f2f2",
+						"backgroundColorTop": "#e5e5e5",
+						"backgroundColorBottom": "#e5e5e5",
+						"app-plus": {
+							"softinputNavBar": "none",
+							"bounce": "none"
+						}
+					}
+				},
+				{
+					"path": "chat/details/details",
+					"style": {
+						"navigationBarBackgroundColor": "#cf3c35",
+						"navigationBarTextStyle": "white",
+						"navigationBarTitleText": "红包",
+						"backgroundColorTop": "#cf3c35",
+						"backgroundColorBottom": "#fff"
+					}
+				},
+				{
+					"path": "chat/hand/hand",
+					"style": {
+						"navigationBarBackgroundColor": "#cf3c35",
+						"navigationBarTextStyle": "white",
+						"navigationBarTitleText": "发红包",
+						"backgroundColorTop": "#cf3c35",
+						"backgroundColorBottom": "#fff",
+						"app-plus": {
+							"softinputNavBar": "none",
+							"bounce": "none"
+						}
+					}
+				},
+				{
+					"path": "login/index",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"titleNView": false
+						}
+					}
+				},
+				{
+					"path": "login/index1",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"titleNView": false
+						}
+					}
+				},
+				{
+					"path": "login/index2",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"titleNView": false
+						}
+					}
+				},
+				{
+					"path": "login/index3",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"titleNView": false
+						}
+					}
+				},
+				{
+					"path": "login/index4",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"titleNView": false
+						}
+					}
+				},
+				{
+					"path": "login/index5",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"titleNView": false
+						}
+					}
+				},
+				{
+					"path": "login/wxLogin",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"titleNView": false
+						}
+					}
+				},
+				{
+					"path": "skiTicket/index",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"titleNView": false
+						}
+					}
+				},
+				{
+					"path": "skiTicket/pay",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"titleNView": false
+						}
+					}
+				},
+				{
+					"path": "details",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "通用详情页"
+					}
+				},
+				{
+					"path": "details_wares",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "商品详情页"
+					}
+				}
+			]
+		},
+		{
+			"root": "os_project",
+			"pages": [
+				{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "客户定制",
+						"navigationStyle": "custom"
+					}
+				},
+				// 临时工单
+				{
+					"path": "workOrder/index",
+					"style" : {
+						"navigationBarBackgroundColor":"#2695FE",
+						"navigationBarTextStyle":"white",
+						"navigationBarTitleText":"订单详情",
+						"backgroundColorTop":"#2695FE",
+						"backgroundColorBottom":"#2695FE"
+					}
+				},
+				{
+					"path": "workOrder/index2",
+					"style" : {
+						"navigationBarBackgroundColor":"#2695FE",
+						"navigationBarTextStyle":"white",
+						"navigationBarTitleText":"计划详情",
+						"backgroundColorTop":"#2695FE",
+						"backgroundColorBottom":"#2695FE"
+					}
+				},
+				{
+					"path": "workOrder/index3",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {  
+						    "titleNView": false
+						}
+					}
+				},
+				{
+					"path": "workOrder/index4",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {  
+						    "titleNView": false
+						}
+					}
+				},
+				{
+					"path": "workOrder/index_map",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {  
+						    "titleNView": false
+						}
+					}
+				},
+				{
+					"path": "workOrder/index5",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {  
+						    "titleNView": false
+						}
+					}
+				}
+			]
 		}
 	],
-	"subPackages": [{
-		"root": "tn_components",
-		"pages": [{
-			"path": "pano",
-			"style": {}
-		}, {
-			"path": "bggrad",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		}, {
-			"path": "bgcolor",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		}, {
-			"path": "ancube",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		}, {
-			"path": "anloading",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		}, {
-			"path": "mimicry",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		}, {
-			"path": "mapLocus",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "charts",
-			"style": {
-				"navigationBarTitleText": "图表展示"
-			}
-		},
-		{
-			"path": "poster",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "discern",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		},{
-			"path": "sign",
-			"style": {
-				"navigationBarTitleText": "电子签名"
-			}
-		},{
-			"path": "district",
-			"style": {
-				"navigationBarTitleText": "行政区图"
-			}
-		},
-		{	
-			"path": "search",
-			"style": {
-				"navigationStyle": "custom",
-				"navigationBarTitleText": "便捷查询"
-			}
-		},
-		{
-			"path": "openDocument",
-			"style": {
-				"navigationStyle": "custom",
-				"navigationBarTitleText": "文档预览"
-			}
-		},
-		{
-			"path": "company",
-			"style": {
-				"navigationBarTitleText": "自定义相机"
-			}
-		},
-		{
-			"path": "timeline",
-			"style": {
-				"navigationBarTitleText": "时间轴"
-			}
-		},
-		{
-			"path": "guide",
-			"style": {
-				"navigationStyle": "custom",
-				"navigationBarTitleText": "引导页面"
-			}
-		},
-		{
-			"path": "request",
-			"style": {
-				"navigationStyle": "custom",
-				"navigationBarTitleText": "模拟数据加载"
-			}
-		},
-		{
-			"path": "keyboard",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		}
-		]
-	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

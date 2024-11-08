@@ -1,8 +1,18 @@
 <template>
 	<view class="components-home">
-		<view style="margin-top:-50rpx;height: 486rpx;">
-			<image src='https://s1.ax1x.com/2020/09/16/wccQQP.png' mode='widthFix' class='png' style='width:100%;height:486rpx'></image>
+		<view style="margin-top:-50rpx;height: 486rpx; position: relative;margin-bottom: 80rpx;">
+			<image src='https://zhoukaiwen.com/img/wccQQP.png' mode='widthFix' class='png' style='width:100%;height:486rpx'></image>
+			<!--  -->
 		</view>
+		
+		<swiper class="card-swiper round-dot" previous-margin="1rpx" :indicator-dots="false" :circular="true" :autoplay="true" interval="5000"
+		  duration="500" @change="cardSwiper" indicator-color="#ffffff" indicator-active-color="#ffffff" style="margin-top: -320upx;">
+		  <swiper-item v-for="(item,index) in swiperList" :key="index" :class="cardCur == index ? 'cur':''">
+		    <view class="swiper-item shadow-shop" style="border-radius: 20rpx 20rpx 22rpx 22rpx;">
+		      <image :src="item.url" v-if="item.type=='image'" mode="aspectFill" class=""></image>
+		    </view>
+		  </swiper-item>
+		</swiper>
 
 		<view class="title-header">
 			<view class="title-text">
@@ -11,21 +21,33 @@
 		</view>
 
 		<view class='nav-list margin-top'>
-			<navigator open-type="navigate" hover-class='none' :url="'/tn_components/' + item.title" :class="'nav-li bg-kuxuan' + (index+1)"
-			 v-for="(item, index) in kuxuan" :key="index">
+			<navigator open-type="navigate" hover-class='none' :url="'/tn_components/' + item.title"
+				:class="'nav-li bg-kuxuan' + (index+1)" v-for="(item, index) in kuxuan" :key="index">
 				<view class="nav-name">{{item.name}}</view>
 			</navigator>
 		</view>
-
+		
 		<view class="title-header">
 			<view class="title-text">
-				样 / 式 / 组 / 件
+				样 / 式 / 模 / 板
 			</view>
 		</view>
 
 		<view class='nav-list margin-top'>
-			<navigator open-type="navigate" hover-class='none' :url="'/tn_components/' + item.title" :class="'nav-li bg-exper' + (index+1)"
-			 v-for="(item, index) in yangshi" :key="index">
+			<navigator open-type="navigate" hover-class='none' :url="'/tn_components/' + item.title"
+				:class="'nav-li bg-exper' + (index+1)" v-for="(item, index) in yangshi" :key="index">
+				<view class="nav-name">{{item.name}}</view>
+			</navigator>
+		</view>
+		
+		<view class="title-header">
+			<view class="title-text">
+				付 / 费 / 组 / 件
+			</view>
+		</view>
+		<view class='nav-list margin-top'>
+			<navigator open-type="navigate" hover-class='none' :url="'../main/' + item.title"
+				:class="'nav-li bg-index' + (index+1)" v-for="(item, index) in fufei" :key="index">
 				<view class="nav-name">{{item.name}}</view>
 			</navigator>
 		</view>
@@ -35,14 +57,29 @@
 				设 / 计 / 模 / 版
 			</view>
 		</view>
-		
+
 		<view class='nav-list margin-top'>
-			<navigator open-type="navigate" hover-class='none' :url="'../design?type=' + index" :class="'nav-li bg-index' + (index+1)"
-			 v-for="(item, index) in Template" :key="index">
+			<navigator open-type="navigate" hover-class='none' :url="'../design?type=' + index"
+				:class="'nav-li bg-index' + (index+1)" v-for="(item, index) in Template" :key="index">
 				<view class="nav-name">{{item.name}}</view>
 			</navigator>
 		</view>
 		
+
+		<!-- <view class="title-header">
+			<view class="title-text">
+				友 / 情 / 链 / 接
+			</view>
+		</view>
+
+		<view class='nav-list margin-top'>
+			<navigator target="miniProgram" :app-id='item.appId' version='release' hover-class='none'
+				:url="'../design?type=' + index" :class="'nav-li bg-kuxuan' + (index+1)"
+				v-for="(item, index) in Links" :key="index">
+				<view class="nav-name">{{item.name}}</view>
+			</navigator>
+		</view> -->
+
 		<view style="height: 120rpx;width: 1rpx;"></view>
 	</view>
 </template>
@@ -52,8 +89,42 @@
 		name: 'Components',
 		data() {
 			return {
-				Template:[
+				swiperList: [{
+				  id: 0,
+				  type: 'image',
+				  url: 'https://zhoukaiwen.com/img/qdpz/phone1.png',
+				}, {
+				  id: 1,
+				  type: 'image',
+				  url: 'https://zhoukaiwen.com/img/qdpz/phone2.png'
+				}, {
+				  id: 2,
+				  type: 'image',
+				  url: 'https://zhoukaiwen.com/img/qdpz/phone3.png'
+				},{
+				  id: 3,
+				  type: 'image',
+				  url: 'https://zhoukaiwen.com/img/qdpz/phone4.png'
+				}],
+				cardCur: 0,
+				Links: [{
+						name: 'uView',
+						appId: 'wxc256e348c4032ebd'
+					},
 					{
+						name: 'colorUi',
+						appId: 'wxfd5241d66a07713f'
+					},
+					{
+						name: '图鸟科技',
+						appId: 'wxa698b1eee960632f'
+					},
+					{
+						name: 'uniApp',
+						appId: 'wx999bf02c8e05dfc9'
+					}
+				],
+				Template: [{
 						title: 'gamecube',
 						name: 'App设计',
 						color: ''
@@ -74,7 +145,8 @@
 						color: ''
 					}
 				],
-				kuxuan: [{
+				kuxuan: [
+					{
 						title: 'mapLocus',
 						name: '地图轨迹',
 						color: ''
@@ -105,13 +177,28 @@
 						color: ''
 					},
 					{
-						title: 'discern',
-						name: '证件识别',
+						title: 'keyboard',
+						name: '自定义键盘',
 						color: ''
 					},
 					{
-						title: 'keyboard',
-						name: '自定义键盘',
+						title: 'chat/chat',
+						name: '聊天功能',
+						color: ''
+					},
+					{
+						title: 'seat',
+						name: '在线选座',
+						color: ''
+					},
+					{
+						title: 'photoWall/photoAll',
+						name: '照片墙下载',
+						color: ''
+					},
+					{
+						title: 'finance/index',
+						name: '金融量化页',
 						color: ''
 					},
 					{
@@ -130,8 +217,8 @@
 						color: ''
 					},
 					{
-						title: 'guide',
-						name: '引导页面',
+						title: 'drag_demo/index',
+						name: '悬浮球',
 						color: ''
 					},
 					{
@@ -140,7 +227,68 @@
 						color: ''
 					}
 				],
-				yangshi: [{
+				yangshi: [
+					{
+						title: 'login/index',
+						name: '登陆页合集',
+						color: ''
+					},
+					{
+						title: 'login/wxLogin',
+						name: '微信授权登陆',
+						color: ''
+					},
+					{
+						title: 'discern',
+						name: '证件识别',
+						color: ''
+					},
+					{
+						title: 'salary',
+						name: '排行榜',
+						color: ''
+					},
+					{
+						title: 'course',
+						name: '数据列表',
+						color: ''
+					},
+					{
+						title: 'category',
+						name: '技术栈·类目',
+						color: ''
+					},
+					{
+						title: 'details',
+						name: '通用详情页',
+						color: ''
+					},
+					{
+						title: 'details_wares',
+						name: '商品详情页',
+						color: ''
+					},
+					{
+						title: 'skiTicket/index',
+						name: '购票页面',
+						color: ''
+					},
+					{
+						title: 'takePicture',
+						name: '摄影师资料',
+						color: ''
+					},
+					{
+						title: 'clock',
+						name: '每日签到',
+						color: ''
+					},
+					{
+						title: 'timetables',
+						name: '课程表',
+						color: ''
+					},
+					{
 						title: 'bggrad',
 						name: '渐变动画',
 						color: ''
@@ -160,16 +308,57 @@
 						name: '加载动画',
 						color: ''
 					}
+				],
+				fufei:[
+					{
+						title: 'posterList',
+						name: '海报设计(¥699)',
+						color: ''
+					},
+					{
+						title: 'customCamera',
+						name: '图片编辑器(¥199)',
+						color: ''
+					}
 				]
 			}
 		},
 		methods: {
-
+			cardSwiper(e) {
+			  this.cardCur = e.detail.current
+			},
 		}
 	}
 </script>
 
 <style>
+	.card-swiper {
+	  height: 550upx !important;
+	}
+	
+	.card-swiper swiper-item {
+	  width: 260upx !important;
+	  left: 245upx;	
+	  box-sizing: border-box;
+	  padding: 0upx 15upx 50upx 15upx;
+	  overflow: initial;
+	  /* margin: 100rpx 0; */
+	}
+	
+	.card-swiper swiper-item .swiper-item {
+	  width: 100%;
+	  display: block;
+	  height: 100%;
+	  border-radius: 10upx;
+	  transform: scale(0.7);
+	  transition: all 0.2s ease-in 0s;
+	  overflow: hidden;
+	}
+	
+	.card-swiper swiper-item.cur .swiper-item {
+	  transform: none;
+	  transition: all 0.2s ease-in 0s;
+	}
 	.bg-top-blue {
 		background-image: linear-gradient(135deg, #52B5FC, #746BFE);
 		color: #fff;
@@ -556,10 +745,12 @@
 		background-color: #FF4F94;
 		color: #fff;
 	}
+
 	.bg-exper2 {
 		background-color: #006FFF;
 		color: #fff;
 	}
+
 	.bg-exper3 {
 		background-color: #19D08B;
 		color: #fff;
@@ -574,10 +765,49 @@
 		background-color: #1cbbb4;
 		color: #fff;
 	}
-
 	.bg-exper6 {
 		background-color: #9c26b0;
 		color: #fff;
+	}
+	.bg-exper7 {
+		background-color: #8799a3;
+		color: #fff;
+	}
+	.bg-exper8 {
+		background-color: #00c4fb;
+		color: #fff;
+	}
+	.bg-exper9 {
+		color: #fff;
+		background-color: #FFC32E;
+	}
+	.bg-exper10 {
+		color: #fff;
+		background-color: #a5673f;
+	}
+	.bg-exper11 {
+		background-color: #BC78EC;
+		color: #fff;
+	}
+	.bg-exper12 {
+		background-color: #8DC63F;
+		color: #fff;
+	}
+	.bg-exper13 {
+		color: #fff;
+		background-color: #ff3434;
+	}
+	.bg-exper14 {
+		color: #fff;
+		background-color: #FF4F94;
+	}
+	.bg-exper15 {
+		color: #fff;
+		background-color: #6F68DF;
+	}
+	.bg-exper16 {
+		color: #fff;
+		background-color: #1cbbb4;
 	}
 
 	/*  */
@@ -610,32 +840,51 @@
 		background-color: #BC78EC;
 		color: #fff;
 	}
+
 	.bg-kuxuan7 {
 		background-color: #f39902;
 		color: #fff;
 	}
+
 	.bg-kuxuan8 {
 		color: #fff;
 		background-color: #19CF8A;
 	}
+
 	.bg-kuxuan9 {
 		color: #fff;
 		background-color: #8799a3;
 	}
+
 	.bg-kuxuan10 {
 		color: #fff;
 		background-color: #0396FF;
 	}
+
 	.bg-kuxuan11 {
 		color: #fff;
-		background-color: #00c4fb;
+		background-color: #BC78EC;
 	}
+
 	.bg-kuxuan12 {
 		color: #fff;
 		background-color: #FFC32E;
 	}
+
 	.bg-kuxuan13 {
 		color: #fff;
-		background-color: #35e6c0;
+		background-color: #a5673f;
+	}
+	.bg-kuxuan14 {
+		color: #fff;
+		background-color: #FF4F94;
+	}
+	.bg-kuxuan15 {
+		color: #fff;
+		background-color: #8DC63F;
+	}
+	.bg-kuxuan16 {
+		color: #fff;
+		background-color: #00c4fb;
 	}
 </style>

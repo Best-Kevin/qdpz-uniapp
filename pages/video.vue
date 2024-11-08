@@ -2,10 +2,11 @@
 <template>
 	<view class="container">
 		<view class="MainBox">
+			<!-- 此处为“腾讯视频插件” -->
+			<!-- 小程序没有影视音证书就无法上线视频播放相关功能，必须要使用腾讯视频插件，您如果是做demo不考虑上线，可以使用<video>标签 -->
 			<txv-video :vid="videoUrl" playerid="txv1"></txv-video>
 			
-			</video>
-			<view class="cssBox"style="position: relative;">
+			<view class="cssBox" style="position: relative;">
 				
 				<view class="leftBox">
 					<view class="margin-bottom-sm">

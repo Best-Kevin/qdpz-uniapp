@@ -1,7 +1,7 @@
 <!-- 个人中心 -->
 <template>
 	<view class="components-theme">
-		<navigator target="miniProgram" app-id='wx307a52ca028d3c07' version='release' hover-class="none">
+		<button open-type="share">
 			<view class="dong">
 				<view class="monster">
 					<view class="monster__face">
@@ -22,10 +22,11 @@
 					</view>
 				</view>
 			</view>
-		</navigator>
+		</button>
+		
 		<!-- 弹窗确认 -->
 		<view class="cu-modal" :class="modalName=='Modal'?'show':''">
-			<view class="cu-dialog">
+			<view class="cu-dialog" style="padding: 300rpx 0 70rpx;">
 				<view class="modal_bg"></view>
 				<view class="modal_main">
 					<view class='nav-list margin-top'>
@@ -37,7 +38,7 @@
 			</view>
 		</view>
 		<!-- 顶部背景 -->
-		<view class='UCenter-bg' :style="'background-image: url(' + pic[topBackGroupImageIndex].link + ');margin-top:-' + CustomBar + 'px;'">
+		<view class='UCenter-bg' :style="'background-image: url(' + pic[topBackGroupImageIndex].link + ');margin-top:' + CustomBar + 'px;'">
 			<view class='space' v-show="spaceShow">
 				<view class="stars ">
 					<view class="star "></view>
@@ -48,15 +49,16 @@
 			</view>
 
 			<block>
-				<view class='text-center'>
-					<!-- <view class="cu-avatar2 round margin-right-sm shadow-blur bg-img" style="background-image:url(http://cdn.zhoukaiwen.com/head1.jpg);">
-					</view> -->
-
-					<view class="cu-avatar2 round xl margin-right-sm shadow-blur-lg bg-img open-data" style="overflow: hidden;">
+				<view class='text-center' @click="goMedal">
+					<!-- <view class="cu-avatar2 round xl margin-right-sm shadow-blur-lg bg-img open-data">
 						<open-data type="userAvatarUrl"></open-data>
+					</view> -->
+					<view class="cu-avatar2 round xl margin-right-sm shadow-blur-lg bg-img open-data"
+						style="overflow: hidden;">
+						<image src="../../static/logo.png" style="width: 100%; height: 100%;"></image>
 					</view>
 					<view class="padding text-blue text-xl text-bold">
-						你好，<open-data type="userNickName"></open-data>
+						你好，开发者！
 					</view>
 
 				</view>
@@ -69,24 +71,25 @@
 		<block>
 			<view class='padding flex text-center text-grey bg-white shadow-warp-my'>
 				<view class='flex flex-sub flex-direction solid-right'>
-					<view class="text-xxl text-orange">829</view>
+					<view class="text-xxl text-orange">35.6k+</view>
 					<view class="margin-top-sm">
 						<text class='cuIcon-hot'></text> 访客</view>
 				</view>
 				<view class='flex flex-sub flex-direction solid-right'>
-					<view class="text-xxl text-blue">86</view>
+					<view class="text-xxl text-blue">15.6k</view>
 					<view class="margin-top-sm">
 						<text class='cuIcon-share'></text> 分享</view>
 				</view>
 				<view class='flex flex-sub flex-direction'>
-					<view class="text-xxl text-red">142</view>
+					<view class="text-xxl text-red">5.5k+</view>
 					<view class="margin-top-sm">
 						<text class='cuIcon-like'></text> 点赞</view>
 				</view>
 			</view>
-
-
-			<view class="cu-list menu card-menu margin-top-lg margin-bottom-sm shadow-shop bg-white text-black my-radius sm-border">
+			
+			
+			
+			<view class="cu-list menu card-menu margin-top-lg shadow-shop bg-white text-black my-radius sm-border">
 				<view class="cu-item" @tap="showModal" data-target="Modal">
 					<view class='content'>
 						<image src='../../static/me/icon/zhuti.png' class='png' mode='aspectFit'></image>
@@ -132,19 +135,38 @@
 						<text class="text-grey text-sm">共4款</text>
 					</view>
 				</view> -->
-
+				
 				<view class="cu-item">
 					<button class='content cu-btn' open-type="share">
 						<image src='../../static/me/icon/lvhang.png' class='png' mode='aspectFit'></image>
 						<text class='text-lg margin-sm'>分享小程序</text>
 					</button>
 				</view>
+				
+				<!-- <view class="cu-item" @click="playVideo">
+					<button class='content cu-btn'>
+						<image src='../../static/me/icon/shouji.png' class='png' mode='aspectFit'></image>
+						<text class='text-lg margin-sm'>支持作者</text>
+					</button>
+					<view class="action">
+						<text class="text-xs text-orange">不需要打钱！</text>
+						<text class="text-xs text-grey">看看广告就很感谢啦～</text>
+					</view>
+				</view> -->
+				
+				<view class="cu-item">
+					<button class='content cu-btn' @tap="showGitee" data-target="ModalGitee">
+						<image style="border-radius: 50rpx;" src='https://zhoukaiwen.com/img/icon/gitee_logo.jpeg' class='png' mode='aspectFit'></image>
+						<text class='text-lg margin-sm'>下载小程序源码</text>
+					</button>
+				</view>
 
 			</view>
+			
 
-			<view class="cu-list menu card-menu margin-top-lg margin-bottom-lg shadow-shop bg-white text-black my-radius sm-border">
+			<view class="cu-list menu card-menu margin-bottom-lg shadow-shop bg-white text-black my-radius sm-border">
 
-				<view class="cu-item ">
+				<!-- <view class="cu-item ">
 					<button class='content cu-btn' @click="goSalary">
 						<image src='../../static/me/icon/jisuanqi.png' class='png' mode='aspectFit'></image>
 						<text class='text-lg margin-sm'>薪资排名</text>
@@ -155,7 +177,7 @@
 						<image src='../../static/me/icon/youjian.png' class='png' mode='aspectFit'></image>
 						<text class='text-lg margin-sm'>课班信息</text>
 					</button>
-				</view>
+				</view> -->
 
 				<view class="cu-item ">
 					<button class='content cu-btn' open-type="contact">
@@ -189,6 +211,33 @@
 			</view>
 
 		</block>
+		
+		<!-- Gitee弹窗 -->
+		<view class="cu-modal" :class="modalName=='ModalGitee'?'show':''">
+			<view class="cu-dialog">
+				<view class="cu-bar bg-white justify-end">
+					<view class="content">Gitee开源</view>
+					<view class="action" @tap="hideModal">
+						<text class="cuIcon-close text-red"></text>
+					</view>
+				</view>
+				<view style="padding: 10rpx 50rpx 50rpx 50rpx;">
+					<image src="https://cdn.zhoukaiwen.com/logo.png" mode="widthFix" style="width:150rpx;"></image>
+					<view class="text-bold text-xl text-balck margin-top-xs margin-bottom">《前端铺子》· 开源，易上手</view>
+					<view class="flex justify-between margin-bottom-lg">
+						<image src="https://svg.hamm.cn/gitee.svg?type=star&user=kevin_chou&project=qdpz" mode="heightFix" style="height:40rpx;"/>
+						<image src="https://svg.hamm.cn/gitee.svg?type=fork&user=kevin_chou&project=qdpz" mode="heightFix" style="height:40rpx;"/>
+					</view>
+					
+					
+					
+					<p @click="getGitee">
+						<text class="margin-right-xs">[点击复制]</text>
+						<text class="giteeClass">https://gitee.com/kevin_chou</text>
+					</p>
+				</view>
+			</view>
+		</view>
 
 		<view style="height: 110rpx;width: 1rpx;"></view>
 
@@ -196,6 +245,7 @@
 </template>
 
 <script>
+	var videoAd = null
 	export default {
 		data() {
 			return {
@@ -255,6 +305,7 @@
 		onShareAppMessage(res) {
 			return {
 				title: '看看这个小程序多好玩～',
+				imageUrl: 'https://cdn.zhoukaiwen.com/qdpz_share.jpg',
 			};
 		},
 		watch:{
@@ -268,6 +319,18 @@
 			}
 		},
 		mounted() {
+			// 在页面中定义激励视频广告
+			// let videoAd = null
+			
+			// 在页面onLoad回调事件中创建激励视频广告实例
+			// if (wx.createRewardedVideoAd) {
+			//   videoAd = wx.createRewardedVideoAd({
+			//     adUnitId: 'adunit-5620518afa0bd171'
+			//   })
+			//   videoAd.onLoad(() => {})
+			//   videoAd.onError((err) => {})
+			//   videoAd.onClose((res) => {})
+			// }
 			// uni.showToast({
 			//     title: '暂未开放,敬请期待',
 			// 	icon: 'none',
@@ -275,6 +338,24 @@
 			// });
 		},
 		methods: {
+			// playVideo(){
+			// 	videoAd.show()
+			// 	.catch(() => {
+			// 	    videoAd.load()
+			// 	    .then(() => videoAd.show())
+			// 	    .catch(err => {
+			// 	      console.log('激励视频 广告显示失败')
+			// 	    })
+			// 	})
+			// },
+			getGitee(){
+				uni.setClipboardData({
+				    data: 'https://gitee.com/kevin_chou',
+				    success: function () {
+				        console.log('success');
+				    }
+				});
+			},
 			switchImage(index, name) {
 				this.topBackGroupImageIndex = index;
 				this.modalName = null;
@@ -282,6 +363,12 @@
 			},
 			showModal(e) {
 				this.modalName = e.currentTarget.dataset.target
+			},
+			showGitee(e){
+				this.modalName = e.currentTarget.dataset.target
+			},
+			hideModal(e) {
+				this.modalName = null
 			},
 
 			// 答题测试
@@ -296,6 +383,11 @@
 					phoneNumber: "18629591093",
 				});
 			},
+			goMedal(){
+				uni.navigateTo({
+					url: '../../tn_components/medal'
+				})
+			},
 			// 关于作者
 			goAboutMe() {
 				uni.navigateTo({
@@ -303,22 +395,23 @@
 				})
 			},
 			// 薪资排名
-			goSalary() {
-				uni.navigateTo({
-					url: '../me/salary'
-				})
-			},
-			// 课班信息
-			goCourse() {
-				uni.navigateTo({
-					url: '../me/course'
-				})
-			}
+			// goSalary() {
+			// 	uni.navigateTo({
+			// 		url: '../me/salary'
+			// 	})
+			// },
+			// // 课班信息
+			// goCourse() {
+			// 	uni.navigateTo({
+			// 		url: '../me/course'
+			// 	})
+			// }
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
+	
 	.UCenter-bg {
 		background: #fff;
 		background-size: 100% 100%;
@@ -482,13 +575,15 @@
 	.margin-bottom-my {
 		margin-bottom: 150rpx;
 	}
-
-
-	// 
+	.giteeClass{
+		margin-top: 30rpx;
+		font-size: 34rpx;
+		color: #2440B3;
+		text-decoration: underline;
+	}
 	.cu-dialog {
 		background: #FFFFFF;
 		overflow: visible;
-		padding: 300rpx 0 70rpx;
 	}
 
 	.modal_bg {
@@ -496,7 +591,7 @@
 		height: 400rpx;
 		position: absolute;
 		top: -100rpx;
-		background-image: url(http://cdn.zhoukaiwen.com/modal_bg.png);
+		background-image: url(https://zhoukaiwen.com/img/qdpz/modal_bg.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
 	}

@@ -40,6 +40,7 @@
 		},
 		methods: {
 			async shareFc() {
+				const divNum = '这是一条变量，并且支持换行，这是一条变量，并且支持换行';
 				try {
 					_app.log('准备生成:' + new Date())
 					const d = await getSharePoster({
@@ -95,6 +96,22 @@
 												/* roundRectSet: { // 圆角矩形
 													r: imageInfo.width * .1
 												} */
+											}
+										}
+									},
+									{
+										type: 'text',
+										text: divNum,
+										size: fontSize,
+										color: 'white',
+										lineFeed: 1,
+										alpha: 1,
+										textAlign: 'left',
+										textBaseline: 'top',
+										infoCallBack(textLength) {
+											return {
+												dx: 15,
+												dy: 15
 											}
 										}
 									},

@@ -1,9 +1,15 @@
 
 // const baseUrl = 'https://cdn.zhoukaiwen.com/';
-const baseUrl = 'https://www.zhoukaiwen.com/';
+// const baseUrl = 'https://www.zhoukaiwen.com/';
+let baseUrl;
 
 // 不带token请求
 const httpRequest = (opts, data) => {
+	if(opts.type == 2){
+		baseUrl = 'https://www.zhoukaiwen.com/';
+	}else{
+		baseUrl = 'https://api.zhoukaiwen.com/';
+	}
 	uni.onNetworkStatusChange(function(res) {
 		if (!res.isConnected) {
 			uni.showToast({
@@ -40,8 +46,14 @@ const httpRequest = (opts, data) => {
 	})
 	return promise
 };
+
 //带Token请求
 const httpTokenRequest = (opts, data) => {
+	if(opts.type == 2){
+		baseUrl = 'https://www.zhoukaiwen.com/';
+	}else{
+		baseUrl = 'https://api.zhoukaiwen.com/';
+	}
 	uni.onNetworkStatusChange(function(res) {
 		if (!res.isConnected) {
 			uni.showToast({
@@ -124,6 +136,8 @@ const httpTokenRequest = (opts, data) => {
 	//此token是登录成功后后台返回保存在storage中的
 
 };
+
+// 拦截器
 const hadToken = () => {
 	let token = uni.getStorageSync('token');
 

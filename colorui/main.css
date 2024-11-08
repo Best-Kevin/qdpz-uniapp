@@ -3256,6 +3256,9 @@ scroll-view.cu-steps .cu-item {
 .padding-left-xl {
 	padding-left: 50upx;
 }
+.padding-left-xxl {
+	padding-left: 80upx;
+}
 
 .padding-lr-xs {
 	padding-left: 10upx;
@@ -3580,6 +3583,14 @@ scroll-view.cu-steps .cu-item {
 	background-image: linear-gradient(45deg, #0081ff, #1cbbb4);
 	color: #ffffff;
 }
+.bg-1a1a1a{
+	background-color: #1A1A1A;
+	color: #ffffff;
+}
+.bg-gdBlue{
+	background-color: #2695FE;
+	color: #ffffff;
+}
 
 .shadow[class*="-red"] {
 	box-shadow: 6upx 6upx 8upx rgba(204, 69, 59, 0.2);
@@ -3770,6 +3781,9 @@ scroll-view.cu-steps .cu-item {
 
 .text-xxl {
 	font-size: 44upx;
+}
+.text-xxxl {
+	font-size: 52upx;
 }
 
 .text-sl {

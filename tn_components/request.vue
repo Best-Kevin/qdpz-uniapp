@@ -30,6 +30,7 @@
 			getData() {
 				console.log('数据加载')
 				let opts = {
+					type: 2, 	//1为数据接口；2为静态资源请求
 					url: 'json/project.json',
 					method: 'get'
 				};
