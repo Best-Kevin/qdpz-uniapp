@@ -27,17 +27,6 @@
 
 <br />
 
-<div align="center">
-	🥇 优秀项目推荐，解锁更多优秀软件
-</div>
-<br />
-<div style="float:left">
-	<a href="https://www.finclip.com/product/sdk?from=qianduanpuzi">
-		<img src="https://cdn.zhoukaiwen.com/tj_finclip.png" width="200" />
-	</a>
-</div>
-<br />
-
 
 ### 扫码体验
 <img src="https://cdn.zhoukaiwen.com/qdpz_ewm.png" width="100%" />
@@ -218,11 +207,11 @@
 
 
 ### 版权及作者说明
-1.  版权：西安市莲湖区易凯科技网络工作室 & 西安众凯云科技有限公司
-2.  开发者：周凯文
-3.  电话：18629591093
-4.  邮箱：280224091@qq.com
-5.  微信：280224091
+1.  版权：西安众凯云科技有限公司
+2.  网址：xazky.com
+3.  开发者：周凯文
+4.  电话：18629591093(微信同号)
+5.  邮箱：280224091@qq.com
 
 
 ### 其他说明
@@ -256,13 +245,9 @@
 <img src="https://cdn.zhoukaiwen.com/wxq1_4-2.jpg" width="100%"/>
 </p>
 
-<p>
-<p>⚠ 扫码进新群！！！！扫码进新群！！！！扫码进新群！！！！</p>
-<img src="https://cdn.zhoukaiwen.com/q6_20241105155043.jpg" width="60%"/>
-</p>
 
 <p>群聊人数多，加大群需要微信邀请，或有其他合作，请微信扫描下方二维码</p>
-<img src="https://cdn.zhoukaiwen.com/qdpz-ewm2ppl.jpg" width="100%" />
+<img src="https://cdn.zhoukaiwen.com/qdpz-ewm2ppl.jpg" width="80%" />
 
 ### 贡献者列表
 <div style="float:left">
