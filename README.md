@@ -32,6 +32,23 @@
 <img src="https://cdn.zhoukaiwen.com/qdpz_ewm.png" width="100%" />
 <p>关注 前端铺子公众号，关注自动发会员组件下载暗号~（定期更新）及抽奖活动！</p>
 
+## 致所有支持「前端铺子」的朋友们：
+
+很遗憾，因 Gitee 平台误判与恶意举报，我的账户已被封禁，项目无法继续更新。
+
+为了不辜负大家的信任，我将「前端铺子」完整迁移至 GitHub与GitCode 平台，后续所有代码更新、功能迭代都会在这里进行。
+
+从 UniApp 移动端、大数据可视化大屏，到 NodeJS 后端、Vue 后台管理系统，所有项目都会持续维护，也欢迎大家一起参与贡献！
+
+GitHub 地址：[前端铺子](https://github.com/Best-Kevin/qdpz-uniapp)
+GitCode 地址：[前端铺子](https://gitcode.com/Kevin_Chou/qdpz-uniapp)
+
+<p align="right">感谢一路相伴，我们 GitHub 见！</p>
+
+<p align="left">
+	<img src="https://cdn.zhoukaiwen.com/qdpz_gitee_jt.jpg" width="100%" />
+</p>
+
 ### 文档地址
 [点击查看详细说明文档，一定要仔细看哦～](http://qdpz.zhoukaiwen.com/)
 
